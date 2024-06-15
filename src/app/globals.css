@@ -9,6 +9,18 @@
   margin: 0;
 }
 
+body {
+  font-family: "Avenir", sans serif;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 800;
+  src: local("Avenir"),
+    url("./../../public/fonts/Avenir-Heavy.ttf") format("truetype");
+}
+
 .slick-dots {
   bottom: 20px !important;
 }
