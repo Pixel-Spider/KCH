@@ -26,6 +26,10 @@ const config: Config = {
       },
       padding: {
         "6.5": "26px",
+        "2xl-2": "227px",
+      },
+      width: {
+        "2xl-2": "calc( 100% - 240px)",
       },
       colors: {
         primary: "#2E3190",

@@ -66,19 +66,19 @@ const data = [
 
 const OurProductAndService = () => {
   return (
-    <div className="py-10 px-6.5 lg:px-[150px] lg:pt-[70px] lg:pb-[130px] xl:pt-[80px] xl:pb-[100px] 2xl:pb-[190px] 2xl-[100px]">
-      <div className="border-l-4 py-2 lg:py-0 border-secondary pl-2">
-        <p className="text-xs md:text-md lg:text-lg text-secondary font-extrabold">
+    <div className="py-10 px-6.5 2xl:px-2xl-2 lg:px-[150px] lg:pt-[70px] lg:pb-[130px] xl:pt-[80px] xl:pb-[100px] 2xl:pb-[190px] 2xl-[100px]">
+      <div className="border-l-4 py-2 lg:py-0 border-secondary pl-2 2xl:px-6.5">
+        <p className="text-xs md:text-md lg:text-lg 2xl:text-xl text-secondary font-extrabold">
           What We Offer For You
         </p>
         <h2 className="font-extrabold text-[28px] lg:text-[36px] xl:text-[40px] lg:uppercase text-primary">
           Our Products & Services
         </h2>
       </div>
-      <div className="grid py-6 gap-6 lg:py-8 xl:py-10 2xl:py-11 lg:gap-y-8  xl:gap-y-10 2xl:gap-y-11 grid-cols-1 place-content-between xl:grid-cols-3 md:grid-cols-2">
+      <div className="grid py-6 gap-6 2xl:gap-x-[38px] lg:py-8 xl:py-10 2xl:py-11 lg:gap-y-8  xl:gap-y-10 2xl:gap-y-[48px] grid-cols-1 place-content-between xl:grid-cols-3 md:grid-cols-2">
         {data.map((item) => {
           return (
-            <div key={item.id} className="grid grid-cols-1  gap-6.5">
+            <div key={item.id} className="grid grid-cols-1  gap-6.5 ">
               <div className="relative h-full w-full">
                 <Image
                   src={item.img}
@@ -87,11 +87,11 @@ const OurProductAndService = () => {
                   height={500}
                 />
               </div>
-              <div className="flex gap-2 mt-2 lg:mt-4 xl:mt-5  items-center">
-                <div className="bg-[#868D9A] flex-shrink-0 w-11 h-11 lg:w-12 lg:h-12 p-1">
-                  <Image src="/logo2.svg" width={44} height={44} alt="logo" />
+              <div className="flex gap-2 2xl:gap-[26px] mt-2 2xl:mt-8 lg:mt-4 xl:mt-5  items-center">
+                <div className="bg-[#868D9A] relative flex-shrink-0 w-11 h-11 2xl:w-[55px] 2xl:h-[55px] lg:w-12 lg:h-12 p-1">
+                  <Image src="/logo2.svg" fill alt="logo" />
                 </div>
-                <p className="text-primary text-xl font-extrabold">
+                <p className="text-primary text-xl 2xl:text-2xl font-extrabold">
                   {item.title}
                 </p>
               </div>

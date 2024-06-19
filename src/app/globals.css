@@ -21,6 +21,20 @@ body {
     url("./../../public/fonts/Avenir-Heavy.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Avenir";
+  font-weight: 400;
+  src: local("Avenir"),
+    url("./../../public/fonts/Avenir-Roman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 500;
+  src: local("Avenir"),
+    url("./../../public/fonts/Avenir-Medium.ttf") format("truetype");
+}
+
 .slick-dots {
   bottom: 20px !important;
 }
@@ -79,6 +93,25 @@ body {
   .slick-prev {
     top: 50% !important;
     left: 20px !important;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1980px) {
+  .slick-arrow {
+    width: 78px !important;
+    height: 78px !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .slick-next {
+    top: 55% !important;
+    right: 57px !important;
+  }
+  .slick-prev {
+    top: 55% !important;
+    left: 57px !important;
     z-index: 1;
   }
 }
