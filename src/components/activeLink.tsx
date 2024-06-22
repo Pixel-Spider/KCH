@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function ActiveLink({
   href,
@@ -11,7 +11,6 @@ export default function ActiveLink({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   let isActive = pathname === href ? true : false;
   return (
