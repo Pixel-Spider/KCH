@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className="bg-[#ccdfec] md:bg-about-us-bg-img md:bg-about-us-size md:bg-no-repeat md:bg-about-us-position grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 xl:px-[140px] 2xl:px-2xl-2 py-[40px] xl:pt-[100px]">
-      <div className="hidden md:block">
-        <span className="relative inline-block 2xl:w-[420px] 2xl:h-[517px]">
+    <div className="bg-[#ccdfec] md:bg-about-us-bg-img place-items-center  md:bg-about-us-size md:bg-no-repeat md:bg-about-us-position grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 xl:px-[140px] 2xl:px-2xl-2 py-[40px] xl:pt-[100px]">
+      <div className="hidden lg:block">
+        <span className="relative inline-block md:w-[420px] md:h-[517px] 2xl:w-[420px] 2xl:h-[517px]">
           <Image src="/about-us.jpg" alt="workers working on a laptop" fill />
         </span>
       </div>
@@ -51,13 +51,13 @@ const AboutUs = () => {
         <h2 className="text-[28px] py-2 text-primary mt-10 mb-5 2xl:text-[44px] font-extrabold leading-[38.25px] border-l-4 border-secondary pl-2 whitespace-nowrap">
           Industry Achievements
         </h2>
-        <div className="grid 2xl:mt-[41px] text-white grid-cols-2 place-items-end gap-2 md:grid-cols-3 ">
+        <div className="grid 2xl:mt-[41px] place-content-center text-white grid-cols-2  lg:place-items-center xl:place-items-end gap-2 md:gap-5 lg:gap-10 xl:gap-14 sm:grid-cols-3 ">
           <div
             style={{
               background:
                 "linear-gradient(90deg, #ED801B 0%, #E57114 38%, #D45107 100%)",
             }}
-            className="px-[13px] py-[18px] xl:w-[282px] 2xl:lg:w-[322px] 2xl:lg:h-[165px] xl:py-8 2xl:py-10 md:inline-flex md:justify-center md:items-center md:flex-col"
+            className="px-[13px] w-full py-[18px] xl:w-[282px] 2xl:lg:w-[322px] 2xl:lg:h-[165px] xl:py-8 2xl:py-10 md:inline-flex md:justify-center md:items-center md:flex-col"
           >
             <p className="text-[40px] 2xl:text-[77px] 2xl:leading-[76px] font-extrabold">
               30+
@@ -71,7 +71,7 @@ const AboutUs = () => {
               background:
                 "linear-gradient(90deg, #ED801B 0%, #E57114 38%, #D45107 100%)",
             }}
-            className="px-[13px] py-[18px] xl:w-[282px] 2xl:lg:w-[322px] 2xl:lg:h-[165px]  xl:py-8 2xl:py-10 md:inline-flex md:justify-center md:items-center md:flex-col"
+            className="px-[13px] w-full py-[18px] xl:w-[282px] 2xl:lg:w-[322px] 2xl:lg:h-[165px]  xl:py-8 2xl:py-10 md:inline-flex md:justify-center md:items-center md:flex-col"
           >
             <p className="text-[40px] font-extrabold 2xl:text-[77px] 2xl:leading-[76px]">
               200+
@@ -85,7 +85,7 @@ const AboutUs = () => {
               background:
                 "linear-gradient(90deg, #ED801B 0%, #E57114 38%, #D45107 100%)",
             }}
-            className="px-[13px] py-[18px] xl:w-[282px]  2xl:lg:w-[322px] 2xl:lg:h-[165px]  xl:py-8 2xl:py-10 md:inline-flex md:justify-center md:items-center md:flex-col"
+            className="px-[13px] w-full py-[18px] xl:w-[282px]  2xl:lg:w-[322px] 2xl:lg:h-[165px]  xl:py-8 2xl:py-10 md:inline-flex md:justify-center md:items-center md:flex-col"
           >
             <p className="text-[40px] font-extrabold 2xl:text-[77px] 2xl:leading-[76px]">
               70+

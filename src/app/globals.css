@@ -25,7 +25,7 @@ body {
   font-family: "Avenir";
   font-weight: 400;
   src: local("Avenir"),
-    url("./../../public/fonts/Avenir-Roman.ttf") format("truetype");
+    url("./../../public/fonts/Avenir-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -80,15 +80,30 @@ body {
 
 @media (min-width: 641px) {
   .slick-arrow {
-    width: 78px !important;
-    height: 78px !important;
+    width: 55px !important;
+    height: 55px !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slick-arrow {
+    width: 75px !important;
+    height: 75px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .slick-arrow {
     display: inline-flex !important;
     align-items: center;
     justify-content: center;
   }
   .slick-next {
     top: 50% !important;
-    right: 20px !important;
+    right: 25% !important;
   }
   .slick-prev {
     top: 50% !important;
@@ -97,7 +112,7 @@ body {
   }
 }
 
-@media (min-width: 1980px) {
+@media (min-width: 1920px) {
   .slick-arrow {
     width: 78px !important;
     height: 78px !important;
@@ -107,7 +122,7 @@ body {
   }
   .slick-next {
     top: 55% !important;
-    right: 57px !important;
+    right: 15% !important;
   }
   .slick-prev {
     top: 55% !important;

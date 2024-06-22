@@ -10,13 +10,13 @@ import Image from "next/image";
 const carouselImg = [
   {
     id: 1,
-    img: "/hero-image-m-1.jpg",
-    imgLg: "/hero-image-lg.jpg",
+    img: "/profile_hero-m-bg1.jpg",
+    imgLg: "/profile_hero-bg1.jpg",
   },
   {
     id: 2,
-    img: "/hero-image-m-1.jpg",
-    imgLg: "/hero-image-lg.jpg",
+    img: "/profile_hero-m-bg1.jpg",
+    imgLg: "/profile_hero-bg1.jpg",
   },
 ];
 
@@ -60,7 +60,7 @@ function PrevArrow(props: CustomArrowProps) {
   );
 }
 
-export default function HeroSection() {
+export default function ProfileHeroSection() {
   var settings = {
     dots: false,
     infinite: true,
@@ -102,15 +102,12 @@ export default function HeroSection() {
               />
             </picture>
             <div className="pl-6.5 md:px-20 2xl:px-2xl-2  xl:pl-[150px] flex bg-[rgba(18,18,18,0.35)] flex-col justify-center 2xl:justify-end text-white absolute top-0 left-0 right-0 bottom-0">
-              <div className="xl:w-2/3 2xl:w-3/4 2xl:mb-48">
-                <p className="text-xs md:text-lg xl:text-xl 2xl:text-[30px] font-medium">
-                  Kuwait Chemical House Company
-                </p>
+              <div className="2xl:mb-72">
                 <h1 className="text-[48px] md:text-[60px] lg:text-[70px] xl:text-[80px] 2xl:text-[115px] leading-tight	">
-                  Beyond Boundaries. Beyond Limits.
+                  Our Chemical Journey:
                 </h1>
                 <p className="text-lg xl:text-3xl xl:mt-5 2xl:text-[48px] font-medium">
-                  The Sky is Not the Limit…
+                  Pioneering Excellence in Trading
                 </p>
               </div>
             </div>

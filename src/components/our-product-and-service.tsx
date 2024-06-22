@@ -66,7 +66,7 @@ const data = [
 
 const OurProductAndService = () => {
   return (
-    <div className="py-10 px-6.5 2xl:px-2xl-2 lg:px-[150px] lg:pt-[70px] lg:pb-[130px] xl:pt-[80px] xl:pb-[100px] 2xl:pb-[190px] 2xl-[100px]">
+    <div className="py-10 px-6.5 md:px-20 2xl:px-2xl-2 lg:px-20 lg:pt-[70px] lg:pb-[130px] xl:pt-[80px] xl:pb-[100px] 2xl:pb-[190px] 2xl-[100px]">
       <div className="border-l-4 py-2 lg:py-0 border-secondary pl-2 2xl:px-6.5">
         <p className="text-xs md:text-md lg:text-lg 2xl:text-xl text-secondary font-extrabold">
           What We Offer For You
@@ -78,7 +78,7 @@ const OurProductAndService = () => {
       <div className="grid py-6 gap-6 2xl:gap-x-[38px] lg:py-8 xl:py-10 2xl:py-11 lg:gap-y-8  xl:gap-y-10 2xl:gap-y-[48px] grid-cols-1 place-content-between xl:grid-cols-3 md:grid-cols-2">
         {data.map((item) => {
           return (
-            <div key={item.id} className="grid grid-cols-1  gap-6.5 ">
+            <div key={item.id} className="grid grid-cols-1  gap-6.5 md:gap-12 ">
               <div className="relative h-full w-full">
                 <Image
                   src={item.img}
