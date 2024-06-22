@@ -78,7 +78,7 @@ const OurProductAndService = () => {
       <div className="grid py-6 gap-6 2xl:gap-x-[38px] lg:py-8 xl:py-10 2xl:py-11 lg:gap-y-8  xl:gap-y-10 2xl:gap-y-[48px] grid-cols-1 place-content-between xl:grid-cols-3 md:grid-cols-2">
         {data.map((item) => {
           return (
-            <div key={item.id} className="grid grid-cols-1  gap-6.5 md:gap-12 ">
+            <div key={item.id} className="grid grid-cols-1  gap-x-6.5 ">
               <div className="relative h-full w-full">
                 <Image
                   src={item.img}

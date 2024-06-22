@@ -29,7 +29,7 @@ const Header = () => {
           </span>
         </span>
         <div className="w-full h-full relative">
-          <div className="inline-flex md:h-[40%] md:flex w-full  items-center justify-between pr-6.5 md:r-12">
+          <div className="inline-flex md:h-[40%] md:flex w-full  items-center justify-between pr-6.5 xl:pr-1 xl2:pr-6.5 md:r-12">
             <h2 className="basis-[70%] text-md md:text-xl sm:text-lg xl:pl-8 xl2:pl-[78px] 2xl:pl-[88px] lg:text-lg  xl:text-xl 2xl:text-[25px] font-medium">
               KUWAIT CHEMICAL HOUSE COMPANY
             </h2>
