@@ -10,7 +10,7 @@ const OurCertification = () => {
         <h3 className="font-extrabold  border-l-[3px]  border-[#EB801B] px-6.5   lg:top-[-60px] md:top-[-50px] xl:top-[-70px] 2xl:top-[-90px]  text-[28px] md:text-[30px] lg:text-[34px] xl:text-[40px] lg:uppercase text-[#E7801B]">
           QUALITY CERTIFICATIONS{" "}
         </h3>
-        <div className="flex flex-wrap md:w-3/4 justify-evenly sm:gap-10 sm:justify-start gap-y-4 my-[35px]  xl:gap-x-20">
+        <div className="flex flex-wrap md:w-3/4 justify-evenly sm:gap-x-10  sm:gap-y-10 sm:justify-start gap-y-4 my-[35px] xl:mb-[0]  xl:gap-x-[100px] pb-[35px]">
           {Array.from({ length: 9 }).map((_, index) => {
             return (
               <div

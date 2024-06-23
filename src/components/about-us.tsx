@@ -47,11 +47,11 @@ const AboutUs = () => {
           READ MORE
         </button>
       </div>
-      <div className="md:col-span-full	px-6.5">
-        <h2 className="text-[28px] py-2 text-primary mt-10 mb-5 2xl:text-[44px] font-extrabold leading-[38.25px] border-l-4 border-secondary pl-2 whitespace-nowrap">
+      <div className="md:col-span-full w-full px-6.5">
+        <h2 className="text-[28px] py-2 text-primary mt-10 mb-5 2xl:text-[44px] font-extrabold leading-[38.25px] border-l-4 border-secondary pl-2 xl:pl-[29px] whitespace-nowrap">
           Industry Achievements
         </h2>
-        <div className="grid 2xl:mt-[41px] place-content-center text-white grid-cols-2  lg:place-items-center xl:place-items-end gap-2 md:gap-5 lg:gap-10 xl:gap-14 sm:grid-cols-3 ">
+        <div className="grid 2xl:mt-[41px] place-content-center text-white grid-cols-2  lg:place-items-center xl:place-items-end 2xl:gap-0 gap-2 md:gap-5 lg:gap-10 xl:gap-14 sm:grid-cols-3 ">
           <div
             style={{
               background:

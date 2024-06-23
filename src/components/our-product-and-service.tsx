@@ -67,7 +67,7 @@ const data = [
 const OurProductAndService = () => {
   return (
     <div className="py-10 px-6.5 md:px-20 2xl:px-2xl-2 lg:px-20 lg:pt-[70px] lg:pb-[130px] xl:pt-[80px] xl:pb-[100px] 2xl:pb-[190px] 2xl-[100px]">
-      <div className="border-l-4 py-2 lg:py-0 border-secondary pl-2 2xl:px-6.5">
+      <div className="border-l-4 py-2 lg:py-0 border-secondary pl-2  xl:pl-[29px] 2xl:pl-[29px]">
         <p className="text-xs md:text-md lg:text-lg 2xl:text-xl text-secondary font-extrabold">
           What We Offer For You
         </p>
