@@ -10,6 +10,7 @@ import QualityIcon from "../../../public/quality.svg";
 import ExcellenceIcon from "../../../public/excelence.svg";
 import OurCertification from "@/components/ourCertification";
 import ProfileHeroSection from "@/components/profile-hero-section";
+import Image from "next/image";
 
 const Profile = () => {
   return (
@@ -104,6 +105,9 @@ const Profile = () => {
         </section>
         <OurCertification />
       </div>
+      <span className="absolute top-[76%] opacity-50 right-0 z-10">
+        <Image src={"/about-us-bg3.png"} alt="Logo" width={352} height={587} />
+      </span>
       <Footer />
     </>
   );
