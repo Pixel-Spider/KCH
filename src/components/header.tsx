@@ -4,6 +4,11 @@ import MenuIcon from "../../public/menu.svg";
 import CloseIcon from "../../public/close.svg";
 import Link from "next/link";
 import ActiveLink from "./activeLink";
+import { createPortal } from "react-dom";
+import dynamic from "next/dynamic";
+const DropDown = dynamic(() => import("./products-services-dropDown"), {
+  ssr: false,
+});
 
 const Header = () => {
   return (
@@ -83,7 +88,11 @@ const Header = () => {
               <li>
                 <ActiveLink href="/profile">Profile</ActiveLink>
               </li>
-              <li>Products/Services</li>
+              <li>
+                <ActiveLink href="/products-and-services">
+                  Products/Services
+                </ActiveLink>
+              </li>
               <li>Case Study</li>
               <li>Contact us</li>
             </ul>
@@ -119,8 +128,8 @@ const Header = () => {
         <div className="xl:mr-[68px] xl2:mr-[76px] 2xl:mr-[96px] text-[#868D9A] whitespace-nowrap">
           <ActiveLink href="/profile">Profile</ActiveLink>
         </div>
-        <div className="xl:mr-[45px] xl2:mr-[48px] 2xl:mr-[68px] text-[#868D9A] whitespace-nowrap">
-          Products/Services
+        <div className="xl:mr-[45px] products-and-services-dropdown relative xl2:mr-[48px] 2xl:mr-[68px] text-[#868D9A] whitespace-nowrap">
+          <DropDown />
         </div>
         <div className="xl:mr-[65px] xl2:mr-[69px] 2xl:mr-[89px] text-[#868D9A] whitespace-nowrap">
           Case Study{" "}

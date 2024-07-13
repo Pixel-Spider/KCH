@@ -17,6 +17,10 @@ const config: Config = {
         "footer-bg-md":
           "url('/footer-bg-2.svg'), linear-gradient(90deg, #2E3190 0%, #045E9D 100%)",
         "about-us-bg-img": "url('/about-us-bg1.png'), url('/about-us-bg2.png')",
+        "service-bg-img": " url('/about-us-bg1.png'), url('/about-us-bg2.png')",
+        "primary-linear": "linear-gradient(90deg, #2E3190 0%, #035F9D 100%)",
+        "secondary-linear":
+          "linear-gradient(90deg, #ED801B 0%, #E57114 38%, #D45107 100%)",
         profileBg:
           "linear-gradient(90deg, rgba(46,49,144,0.8057816876750701) 19%, rgba(3,95,157,0.8674063375350141) 69%), url('/profileBg2.png')",
       },
@@ -25,6 +29,7 @@ const config: Config = {
       },
       backgroundSize: {
         "about-us-size": "50% 150px, 50% 60%",
+        "service-bg-img-size": "50% 150px, 50% 60%",
       },
       boxShadow: {
         "chairman-message": "14.62px 14.62px 47.86px 0px #000000BF",
