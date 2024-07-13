@@ -12,7 +12,7 @@ const DropDown = dynamic(() => import("./products-services-dropDown"), {
 
 const Header = () => {
   return (
-    <header className="relative">
+    <header className="sticky top-0 z-50">
       <div className="bg-white flex items-center text-sm text-primary lg:h-[110px] xl:h-[130px] xl2:h-[155px] 2xl:h-[175px]">
         <span
           style={{
