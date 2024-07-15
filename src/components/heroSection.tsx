@@ -23,8 +23,8 @@ function NextArrow(props: any) {
   return (
     <button
       className={[
-        "right-[3%] top-1/2 translate-y-[-50%] 2xl:w-[100px] 2xl:h-[100px] xl:w-[70px] xl:h-[70px]",
-        "border absolute z-10 border-white rounded-full",
+        "right-0 top-1/2 translate-y-[-50%] 2xl:w-[100px] 2xl:h-[100px] xl:w-[70px] xl:h-[70px]",
+        "border absolute z-10 border-white rounded-full inline-flex items-center justify-center",
       ].join(" ")}
       onClick={() => onClick.current && onClick.current()}
       style={{
@@ -45,8 +45,8 @@ function PrevArrow(props: any) {
   return (
     <button
       className={[
-        "absolute left-[3%] top-1/2 translate-y-[-50%] 2xl:w-[100px] 2xl:h-[100px] xl:w-[70px] xl:h-[70px] z-10",
-        "border border-white rounded-full top-96",
+        "absolute left-[-10%] top-1/2 translate-y-[-50%] 2xl:w-[100px] 2xl:h-[100px] xl:w-[70px] xl:h-[70px] z-10",
+        "border border-white rounded-full inline-flex items-center justify-center",
       ].join(" ")}
       style={{
         ...style,
@@ -88,34 +88,36 @@ export default function HeroSection() {
         }}
       >
         <Overlay className="">
-          <div className=" pl-6.5 md:px-20 2xl:px-2xl-2  xl:pl-[150px] flex bg-[rgba(18,18,18,0.35)] flex-col justify-center 2xl:justify-end text-white absolute top-0 left-0 right-0 bottom-0">
-            <div className="xl:w-2/3 2xl:w-3/4 2xl:mb-48">
-              <p
-                data-aos-duration="1000"
-                data-aos="fade-up"
-                className="aos text-xs md:text-lg xl:text-xl 2xl:text-[30px] font-medium"
-              >
-                Kuwait Chemical House Company
-              </p>
-              <h1
-                data-aos-duration="1000"
-                data-aos-delay="500"
-                data-aos="fade-up"
-                className="aos text-[48px] md:text-[60px] lg:text-[70px] xl:text-[80px] 2xl:text-[115px] leading-tight	"
-              >
-                Beyond Boundaries. Beyond Limits.
-              </h1>
-              <p
-                data-aos-duration="1000"
-                data-aos-delay="1000"
-                data-aos="fade-up"
-                className="text-lg aos  xl:text-3xl xl:mt-5 2xl:text-[48px] font-medium"
-              >
-                The Sky is Not the Limit…
-              </p>
+          <div className=" pl-6.5 md:px-20 2xl:pb-48 2xl:px-2xl-2  xl:pl-[150px] flex bg-[rgba(18,18,18,0.35)] flex-col justify-center 2xl:justify-end text-white absolute top-0 left-0 right-0 bottom-0">
+            <div className="relative">
+              <div className=" xl:w-2/3 2xl:w-3/4">
+                <p
+                  data-aos-duration="1000"
+                  data-aos="fade-up"
+                  className="aos text-xs md:text-lg xl:text-xl 2xl:text-[30px] font-medium"
+                >
+                  Kuwait Chemical House Company
+                </p>
+                <h1
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                  data-aos="fade-up"
+                  className="aos text-[48px] md:text-[60px] lg:text-[70px] xl:text-[80px] 2xl:text-[115px] leading-tight	"
+                >
+                  Beyond Boundaries. Beyond Limits.
+                </h1>
+                <p
+                  data-aos-duration="1000"
+                  data-aos-delay="1000"
+                  data-aos="fade-up"
+                  className="text-lg aos  xl:text-3xl xl:mt-5 2xl:text-[48px] font-medium"
+                >
+                  The Sky is Not the Limit…
+                </p>
+              </div>
+              <PrevArrow onClick={previousSlideHandler} />
+              <NextArrow onClick={nextSlideHandler} />
             </div>
-            <PrevArrow onClick={previousSlideHandler} />
-            <NextArrow onClick={nextSlideHandler} />
           </div>
         </Overlay>
         <Slide
