@@ -16,6 +16,14 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+        />
+        <link
           rel="icon"
           href="/favicon-32x32.png"
           sizes="32x32"

@@ -30,7 +30,7 @@ const carouselImg = [
 
 SwiperCore.use([Autoplay]);
 
-function NextArrow(props) {
+export function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <button
@@ -52,7 +52,7 @@ function NextArrow(props) {
   );
 }
 
-function PrevArrow(props) {
+export function PrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <button

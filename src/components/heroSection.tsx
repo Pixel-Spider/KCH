@@ -1,19 +1,9 @@
 "use client";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 import React from "react";
-import Slider, { CustomArrowProps } from "react-slick";
 import Image from "next/image";
-import SwiperCore from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/effect-creative";
-import "swiper/element/css/autoplay";
-
-// import required modules
-import { Autoplay, EffectCreative } from "swiper/modules";
+import "hero-slider/dist/index.css";
+import HeroSlider, { Overlay, Slide, MenuNav } from "hero-slider";
 
 const carouselImg = [
   {
@@ -28,17 +18,15 @@ const carouselImg = [
   },
 ];
 
-SwiperCore.use([Autoplay]);
-
-function NextArrow(props) {
+function NextArrow(props: any) {
   const { className, style, onClick } = props;
   return (
     <button
       className={[
-        "slick-arrow slick-next",
+        "right-[3%] top-1/2 translate-y-[-50%] 2xl:w-[100px] 2xl:h-[100px] xl:w-[70px] xl:h-[70px]",
         "border absolute z-10 border-white rounded-full",
       ].join(" ")}
-      onClick={onClick}
+      onClick={() => onClick.current && onClick.current()}
       style={{
         ...style,
         border: "1px solid white",
@@ -52,12 +40,12 @@ function NextArrow(props) {
   );
 }
 
-function PrevArrow(props) {
+function PrevArrow(props: any) {
   const { className, style, onClick } = props;
   return (
     <button
       className={[
-        "slick-arrow absolute z-10 slick-prev",
+        "absolute left-[3%] top-1/2 translate-y-[-50%] 2xl:w-[100px] 2xl:h-[100px] xl:w-[70px] xl:h-[70px] z-10",
         "border border-white rounded-full top-96",
       ].join(" ")}
       style={{
@@ -67,17 +55,106 @@ function PrevArrow(props) {
         borderRadius: "50%",
         padding: 4,
       }}
-      onClick={onClick}
+      onClick={() => onClick.current && onClick.current()}
     >
       <Image src="/leftArrow.svg" alt="left right" width={50} height={50} />
     </button>
   );
 }
 
-export default function App() {
+export default function HeroSection() {
+  const nextSlideHandler = React.useRef<any>();
+  const previousSlideHandler = React.useRef<any>();
   return (
-    <div className="relative">
-      <PrevArrow />
+    <div>
+      <HeroSlider
+        style={{
+          backgroundColor: "#000",
+        }}
+        height={"90vh"}
+        controller={{
+          initialSlide: 1,
+          slidingDuration: 1500,
+          slidingDelay: 100,
+          goToNextSlidePointer: nextSlideHandler,
+          goToPreviousSlidePointer: previousSlideHandler,
+        }}
+        autoplay={{
+          autoplayDuration: 5000,
+        }}
+        accessibility={{
+          shouldDisplayButtons: false,
+          orientation: "vertical",
+        }}
+      >
+        <Overlay className="">
+          <div className=" pl-6.5 md:px-20 2xl:px-2xl-2  xl:pl-[150px] flex bg-[rgba(18,18,18,0.35)] flex-col justify-center 2xl:justify-end text-white absolute top-0 left-0 right-0 bottom-0">
+            <div className="xl:w-2/3 2xl:w-3/4 2xl:mb-48">
+              <p
+                data-aos-duration="1000"
+                data-aos="fade-up"
+                className="aos text-xs md:text-lg xl:text-xl 2xl:text-[30px] font-medium"
+              >
+                Kuwait Chemical House Company
+              </p>
+              <h1
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                data-aos="fade-up"
+                className="aos text-[48px] md:text-[60px] lg:text-[70px] xl:text-[80px] 2xl:text-[115px] leading-tight	"
+              >
+                Beyond Boundaries. Beyond Limits.
+              </h1>
+              <p
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+                data-aos="fade-up"
+                className="text-lg aos  xl:text-3xl xl:mt-5 2xl:text-[48px] font-medium"
+              >
+                The Sky is Not the Limit…
+              </p>
+            </div>
+            <PrevArrow onClick={previousSlideHandler} />
+            <NextArrow onClick={nextSlideHandler} />
+          </div>
+        </Overlay>
+        <Slide
+          label="Giau Pass - Italy"
+          background={{
+            backgroundImageSrc: "/profile_hero-bg1.jpg",
+            backgroundAnimation: "zoom",
+            backgroundAnimationDuration: "10000",
+          }}
+        />
+
+        <Slide
+          label="Bogliasco - Italy"
+          background={{
+            backgroundImageSrc: "/hero-image-lg.jpg",
+            backgroundAnimation: "zoom",
+            backgroundAnimationDuration: "10000",
+          }}
+        />
+
+        <Slide
+          label="County Clare - Ireland"
+          background={{
+            backgroundImageSrc: "/hero-image-lg.jpg",
+            backgroundAnimation: "zoom",
+            backgroundAnimationDuration: "10000",
+          }}
+        />
+
+        <Slide
+          label="Crater Rock, OR - United States"
+          background={{
+            backgroundImageSrc: "/hero-image-lg.jpg",
+            backgroundAnimation: "zoom",
+            backgroundAnimationDuration: "10000",
+          }}
+        />
+      </HeroSlider>
+      {/* <PrevArrow />
       <NextArrow />
       <Swiper
         grabCursor={true}
@@ -136,7 +213,7 @@ export default function App() {
             </SwiperSlide>
           );
         })}
-      </Swiper>
+      </Swiper> */}
     </div>
   );
 }

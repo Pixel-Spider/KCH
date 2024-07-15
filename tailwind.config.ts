@@ -21,6 +21,7 @@ const config: Config = {
         "primary-linear": "linear-gradient(90deg, #2E3190 0%, #035F9D 100%)",
         "secondary-linear":
           "linear-gradient(90deg, #ED801B 0%, #E57114 38%, #D45107 100%)",
+        project1: "url('/project-1.jpg')",
         profileBg:
           "linear-gradient(90deg, rgba(46,49,144,0.8057816876750701) 19%, rgba(3,95,157,0.8674063375350141) 69%), url('/profileBg2.png')",
       },
@@ -47,6 +48,7 @@ const config: Config = {
       colors: {
         primary: "#2E3190",
         secondary: "#F1801B",
+        neutral: "#e5e6e9",
       },
     },
     screens: {

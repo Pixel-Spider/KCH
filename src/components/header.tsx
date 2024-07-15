@@ -93,7 +93,7 @@ const Header = () => {
                   Products/Services
                 </ActiveLink>
               </li>
-              <li>Case Study</li>
+              <ActiveLink href={"/case-study"}>Case Study</ActiveLink>{" "}
               <li>Contact us</li>
             </ul>
             <button className="bg-secondary absolute bottom-0 text-white px-6.5 md:px-20 py-5 w-full">
@@ -132,7 +132,7 @@ const Header = () => {
           <DropDown />
         </div>
         <div className="xl:mr-[65px] xl2:mr-[69px] 2xl:mr-[89px] text-[#868D9A] whitespace-nowrap">
-          Case Study{" "}
+          <ActiveLink href={"/case-study"}>Case Study</ActiveLink>{" "}
         </div>
         <div className="xl:mr-[76px] xl2:mr-[82px] 2xl:mr-[102px] text-[#868D9A] whitespace-nowrap">
           Contact us
