@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const data = [
   {
@@ -94,21 +95,24 @@ const OurProductAndService = () => {
               data-aos="fade-up"
               className="grid grid-cols-1  gap-x-6.5 "
             >
-              <div className="relative h-full w-full">
+              <div className="relative cursor-pointer h-full w-full overflow-hidden">
                 <Image
                   src={item.img}
                   alt="hero image"
                   width={600}
                   height={500}
+                  className=" duration-500 hover:scale-110"
                 />
               </div>
               <div className="flex gap-2 2xl:gap-[26px] mt-2 2xl:mt-8 lg:mt-4 xl:mt-5  items-center">
                 <div className="bg-[#868D9A] relative flex-shrink-0 w-11 h-11 2xl:w-[55px] 2xl:h-[55px] lg:w-12 lg:h-12 p-1">
                   <Image src="/logo2.svg" fill alt="logo" />
                 </div>
-                <p className="text-primary text-xl 2xl:text-2xl font-extrabold">
-                  {item.title}
-                </p>
+                <Link href={`/products-and-services?active=${index + 1}`}>
+                  <p className="text-primary cursor-pointer text-xl 2xl:text-2xl font-extrabold">
+                    {item.title}
+                  </p>
+                </Link>
               </div>
             </div>
           );

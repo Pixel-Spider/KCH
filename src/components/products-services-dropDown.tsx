@@ -8,20 +8,20 @@ const ProductAndServicesDropDown = () => {
   return (
     <>
       <DropdownMenu.Root>
+        <ActiveLink
+          className="inline-flex items-center gap-2"
+          href="/products-and-services"
+        >
+          Products/Services
+        </ActiveLink>
         <DropdownMenu.Trigger asChild>
           <button className="IconButton" aria-label="Customise options">
-            <ActiveLink
-              className="inline-flex items-center gap-2"
-              href="/products-and-services"
-            >
-              Products/Services
-              <DownArrow />
-            </ActiveLink>
+            <DownArrow />
           </button>
         </DropdownMenu.Trigger>
 
         <DropdownMenu.Portal>
-          <DropdownMenu.Content className=" z-10" sideOffset={5}>
+          <DropdownMenu.Content className="z-50" sideOffset={5}>
             <div
               className={`fixed w-[540px] bg-primary-linear flex py-[37px] rounded-es-2xl rounded-se-2xl px-[24px] xl:gap-4 2xl:gap-[23px] flex-col z-50`}
             >

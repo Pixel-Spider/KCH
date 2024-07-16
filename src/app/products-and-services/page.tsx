@@ -5,6 +5,19 @@ import ProfileHeroSection from "@/components/profile-hero-section";
 import TargetPoint from "../../../public/point.svg";
 import Image from "next/image";
 import React, { useState } from "react";
+import HeroSection from "@/components/heroSection";
+import Project1 from "./1";
+import Project2 from "./2";
+import Project3 from "./3";
+import Project4 from "./4";
+import Project5 from "./5";
+import Project6 from "./6";
+import Project7 from "./7";
+import Project8 from "./8";
+import Project9 from "./9";
+import Project10 from "./10";
+import Project11 from "./11";
+import Project12 from "./12";
 // import { useQueryState } from "next-usequerystate";
 
 const serviceList = [
@@ -69,7 +82,7 @@ const ProductAndServices = () => {
   return (
     <>
       <Header />
-      <ProfileHeroSection />
+      <HeroSection />
       <section className="pb-[400px] flex bg-service-bg-img bg-service-bg-img-size bg-no-repeat bg-about-us-position">
         <div className="xl:w-[380px] xl:pr-[60px] xl2:pr-[70px] 2xl:pr-[80px]  xl2:w-[440px] 2xl:w-[480px] shrink-0 text-center">
           <div
@@ -112,11 +125,11 @@ const ProductAndServices = () => {
           </ul>
         </div>
         <div className="w-full">
-          <div
+          {/* <div
             style={{
               backgroundImage: "url('/1.png')",
             }}
-            className="xl:pl-[100px] 2xl:pl-[140px]"
+            className="xl:pl-[100px] bg-cover bg-no-repeat 2xl:pl-[140px]"
           >
             <div
               style={{
@@ -139,11 +152,21 @@ const ProductAndServices = () => {
                 >
                   {active && serviceList[Number(active) - 1]?.title}
                 </h4>
-                <h3 className="text-secondary xl:text-[26px] xl2:text-[29px] 2xl:text-[38px] font-extrabold">
+                <h3
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                  className="text-secondary xl:text-[26px] xl2:text-[29px] 2xl:text-[38px] font-extrabold"
+                >
                   Fueling the Future: Navigate Oil Fields with Our Advanced
                   Chemical Solutions
                 </h3>
-                <p className="text-white font-normal mt-3 mb-6 xl:text-2xl 2xl:text-[29px]">
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                  className="text-white font-normal mt-3 mb-6 xl:text-2xl 2xl:text-[29px]"
+                >
                   Specialized chemicals for the oil and gas industry, covering
                   drilling fluids, production chemicals, and cementing chemicals
                   supporting various stages of oil & gas exploration, extraction
@@ -151,40 +174,102 @@ const ProductAndServices = () => {
                 </p>
 
                 <ul className="text-white list-disc pl-6">
-                  <li className="font-normal xl:text-2xl 2xl:text-[29px]">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                    className="font-normal xl:text-2xl 2xl:text-[29px]"
+                  >
                     Drilling Fluids and Additives
                   </li>
-                  <li className="font-normal xl:text-2xl 2xl:text-[29px]">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="450"
+                    className="font-normal xl:text-2xl 2xl:text-[29px]"
+                  >
                     Specialty Chemicals
                   </li>
-                  <li className="font-normal xl:text-2xl 2xl:text-[29px]">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="500"
+                    className="font-normal xl:text-2xl 2xl:text-[29px]"
+                  >
                     Mud Chemicals
                   </li>
-                  <li className="font-normal xl:text-2xl 2xl:text-[29px]">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="550"
+                    className="font-normal xl:text-2xl 2xl:text-[29px]"
+                  >
                     Cementing Additives
                   </li>
-                  <li className="font-normal xl:text-2xl 2xl:text-[29px]">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="600"
+                    className="font-normal xl:text-2xl 2xl:text-[29px]"
+                  >
                     Production Chemicals
                   </li>
-                  <li className="font-normal xl:text-2xl 2xl:text-[29px]">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="650"
+                    className="font-normal xl:text-2xl 2xl:text-[29px]"
+                  >
                     Well Completion and Stimulation Chemicals
                   </li>
-                  <li className="font-normal xl:text-2xl 2xl:text-[29px]">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="700"
+                    className="font-normal xl:text-2xl 2xl:text-[29px]"
+                  >
                     Enhanced Oil Recovery (EOR) Chemicals
                   </li>
-                  <li className="font-normal xl:text-2xl 2xl:text-[29px]">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="750"
+                    className="font-normal xl:text-2xl 2xl:text-[29px]"
+                  >
                     Wellbore Cleaners
                   </li>
-                  <li className="font-normal xl:text-2xl 2xl:text-[29px]">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="800"
+                    className="font-normal xl:text-2xl 2xl:text-[29px]"
+                  >
                     Gas Treatment Chemicals
                   </li>
-                  <li className="font-normal xl:text-2xl 2xl:text-[29px]">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="850"
+                    className="font-normal xl:text-2xl 2xl:text-[29px]"
+                  >
                     Refinery Chemicals
                   </li>
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
+          <Project1 />
+          <Project2 />
+          <Project3 />
+          <Project4 />
+          <Project5 />
+          <Project6 />
+          <Project7 />
+          <Project8 />
+          <Project9 />
+          <Project10 />
+          <Project11 />
+          <Project12 />
         </div>
       </section>
       <span className="absolute xl:top-full opacity-50 right-0 z-10">

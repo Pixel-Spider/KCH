@@ -1,4 +1,6 @@
 import Image from "next/image";
+import CountUp from "react-countup";
+import CustomCountUp from "./count-up";
 
 const AboutUs = () => {
   return (
@@ -109,10 +111,14 @@ const AboutUs = () => {
             }}
             className="px-[13px]  w-full py-[18px] xl:w-[282px] 2xl:lg:w-[322px] 2xl:lg:h-[165px] xl:py-8 2xl:py-10 md:inline-flex md:justify-center md:items-center md:flex-col"
           >
-            <p className="text-[40px] 2xl:text-[77px] 2xl:leading-[76px] font-extrabold">
-              30+
-            </p>
-            <p className="font-extrabold text-sm 2xl:text-lg">
+            {/* <p>30+</p> */}
+            <CustomCountUp count={30} />
+            <p
+              data-aos-duration="1500"
+              data-aos-delay="800"
+              data-aos="fade-up"
+              className="font-extrabold text-sm 2xl:text-lg"
+            >
               YEARS EXPERIENCE
             </p>
           </div>
@@ -126,10 +132,13 @@ const AboutUs = () => {
             data-aos="fade-up"
             className="px-[13px]  w-full py-[18px] xl:w-[282px] 2xl:lg:w-[322px] 2xl:lg:h-[165px]  xl:py-8 2xl:py-10 md:inline-flex md:justify-center md:items-center md:flex-col"
           >
-            <p className="text-[40px] font-extrabold 2xl:text-[77px] 2xl:leading-[76px]">
-              200+
-            </p>
-            <p className="font-extrabold text-sm 2xl:text-lg">
+            <CustomCountUp count={200} />
+            <p
+              data-aos-duration="1500"
+              data-aos-delay="1300"
+              data-aos="fade-up"
+              className="font-extrabold text-sm 2xl:text-lg"
+            >
               PROJECT COMPLETED
             </p>
           </div>
@@ -143,10 +152,13 @@ const AboutUs = () => {
             data-aos="fade-up"
             className="px-[13px]  w-full py-[18px] xl:w-[282px]  2xl:lg:w-[322px] 2xl:lg:h-[165px]  xl:py-8 2xl:py-10 md:inline-flex md:justify-center md:items-center md:flex-col"
           >
-            <p className="text-[40px] font-extrabold 2xl:text-[77px] 2xl:leading-[76px]">
-              70+
-            </p>
-            <p className="font-extrabold text-sm 2xl:text-lg">
+            <CustomCountUp count={70} />
+            <p
+              data-aos-duration="1500"
+              data-aos-delay="1800"
+              data-aos="fade-up"
+              className="font-extrabold text-sm 2xl:text-lg"
+            >
               INNOVATIVE PRODUCTS
             </p>
           </div>
