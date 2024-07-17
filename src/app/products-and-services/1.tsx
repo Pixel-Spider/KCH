@@ -1,33 +1,34 @@
 const Project1 = () => {
   return (
-    <div className="w-full">
+    <div id="product-1" className="w-full">
       <div
         style={{
           backgroundImage: "url('/1.png')",
         }}
-        className="xl:pl-[100px] bg-cover bg-no-repeat 2xl:pl-[140px]"
+        className="xl:pl-[100px] min-h-[770px] bg-cover bg-no-repeat 2xl:pl-[140px]"
       >
         <div
           style={{
             backgroundImage:
               "linear-gradient(90deg, rgb(46 49 144 / 70%) 0%, rgb(3 95 157 / 88%) 100%)",
           }}
-          className="w-full xl:pl-[146px] 2xl:pl-[196px] pt-[76px] pb-[96px]"
+          className="w-full xl:pl-[146px] min-h-[770px] 2xl:pl-[196px] pt-[76px] pb-[96px]"
         >
           <div className="relative 2xl:max-w-[801px] xl:max-w-[601px]">
-            <h4
+            <span
               style={{
                 transformOrigin: "0 0",
-                transform: "rotate(270deg)",
-                bottom: 0,
-                width: "100%",
+                transform: "rotate(270deg) translateX(-100%) translateY(-20%)",
                 marginLeft: "auto",
-                textAlign: "left",
+                textAlign: "right",
+                width: "500px",
+                display: "block",
+                top: 0,
               }}
               className="xl:text-[29px] xl2:text-[34px] 2xl:text-[41px] xl:left-[-80px] 2xl:left-[-120px] absolute text-white font-extrabold"
             >
               OIL FIELD CHEMICALS
-            </h4>
+            </span>
             <h3
               data-aos="fade-up"
               data-aos-duration="1000"

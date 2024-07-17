@@ -3,11 +3,16 @@ import ActiveLink from "./activeLink";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import DownArrow from "../../public/down.svg";
 import Link from "next/link";
+import { useState } from "react";
 
 const ProductAndServicesDropDown = () => {
+  const handleClick = () => {
+    setOpen(!open);
+  };
+  const [open, setOpen] = useState(false);
   return (
     <>
-      <DropdownMenu.Root>
+      <DropdownMenu.Root open={open}>
         <ActiveLink
           className="inline-flex items-center gap-2"
           href="/products-and-services"
@@ -15,7 +20,11 @@ const ProductAndServicesDropDown = () => {
           Products/Services
         </ActiveLink>
         <DropdownMenu.Trigger asChild>
-          <button className="IconButton" aria-label="Customise options">
+          <button
+            onClick={() => setOpen(!open)}
+            className="IconButton"
+            aria-label="Customise options"
+          >
             <DownArrow />
           </button>
         </DropdownMenu.Trigger>
@@ -29,72 +38,84 @@ const ProductAndServicesDropDown = () => {
               <Link
                 href={"/products-and-services?active=1"}
                 className={"text-white xl:text-lg 2xl:text-[22px] font-normal"}
+                onClick={handleClick}
               >
                 OIL FIELD CHEMICALS
               </Link>
               <Link
                 href={"/products-and-services?active=2"}
                 className="text-white xl:text-lg 2xl:text-[22px] font-normal"
+                onClick={handleClick}
               >
                 WATER TREATMENT CHEMICALS{" "}
               </Link>
               <Link
                 href={"/products-and-services?active=3"}
                 className="text-white xl:text-lg 2xl:text-[22px] font-normal"
+                onClick={handleClick}
               >
                 CONSTRUCTION CHEMICALS{" "}
               </Link>
               <Link
                 href={"/products-and-services?active=4"}
                 className="text-white xl:text-lg 2xl:text-[22px] font-normal"
+                onClick={handleClick}
               >
                 AVIATION CHEMICALS{" "}
               </Link>
               <Link
                 href={"/products-and-services?active=5"}
                 className="text-white xl:text-lg 2xl:text-[22px] font-normal"
+                onClick={handleClick}
               >
                 PAINT & COATING CHEMICALS{" "}
               </Link>
               <Link
                 href={"/products-and-services?active=6"}
                 className="text-white xl:text-lg 2xl:text-[22px] font-normal"
+                onClick={handleClick}
               >
                 FOOD & BEVERAGE CHEMICALS
               </Link>
               <Link
                 href={"/products-and-services?active=7"}
                 className="text-white text-[22px] font-normal"
+                onClick={handleClick}
               >
                 SOIL REMEDIATION CHEMICALS{" "}
               </Link>
               <Link
                 href={"/products-and-services?active=8"}
                 className="text-white text-[22px] font-normal"
+                onClick={handleClick}
               >
                 INDUSTRIAL CLEANING & MARINE CHEMICALS{" "}
               </Link>
               <Link
                 href={"/products-and-services?active=9"}
                 className="text-white text-[22px] font-normal"
+                onClick={handleClick}
               >
                 ASPHALT CHEMICALS{" "}
               </Link>
               <Link
                 href={"/products-and-services?active=10"}
                 className="text-white text-[22px] font-normal"
+                onClick={handleClick}
               >
                 ENVIRONMENTAL & GREEN CHEMICALS
               </Link>
               <Link
                 href={"/products-and-services?active=11"}
                 className="text-white text-[22px] font-normal"
+                onClick={handleClick}
               >
                 LABORATORY CHEMICALS{" "}
               </Link>
               <Link
                 href={"/products-and-services?active=12"}
                 className="text-white text-[22px] font-normal"
+                onClick={handleClick}
               >
                 BASIC INDUSTRIAL CHEMICALS{" "}
               </Link>

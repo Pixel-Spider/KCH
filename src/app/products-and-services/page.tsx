@@ -4,7 +4,7 @@ import Header from "@/components/header";
 import ProfileHeroSection from "@/components/profile-hero-section";
 import TargetPoint from "../../../public/point.svg";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import HeroSection from "@/components/heroSection";
 import Project1 from "./1";
 import Project2 from "./2";
@@ -18,66 +18,73 @@ import Project9 from "./9";
 import Project10 from "./10";
 import Project11 from "./11";
 import Project12 from "./12";
-// import { useQueryState } from "next-usequerystate";
+import { useQueryState } from "next-usequerystate";
 
 const serviceList = [
   {
     id: 1,
     title: "OIL FIELD CHEMICALS",
-    bg: "1.png",
+    component: <Project1 />,
   },
   {
     id: 2,
     title: "WATER TREATMENT CHEMICALS",
+    component: <Project2 />,
   },
   {
     id: 3,
     title: "CONSTRUCTION CHEMICALS",
+    component: <Project3 />,
   },
   {
     id: 4,
     title: "AVIATION CHEMICALS",
+    component: <Project4 />,
   },
   {
     id: 5,
     title: "PAINT & COATING  CHEMICALS",
+    component: <Project5 />,
   },
   {
     id: 6,
     title: "FOOD & BEVERAGE CHEMICALS",
+    component: <Project6 />,
   },
   {
     id: 7,
     title: "SOIL REMEDIATION CHEMICALS",
+    component: <Project7 />,
   },
   {
     id: 8,
     title: "INDUSTRIAL CLEANING & MARINE CHEMICALS",
+    component: <Project8 />,
   },
   {
     id: 9,
     title: "ASPHALT CHEMICALS ",
+    component: <Project9 />,
   },
   {
     id: 10,
-    title: "AVIATION CHEMICALS",
+    title: "ENVIRONMENTAL & GREEN CHEMICALS",
+    component: <Project10 />,
   },
   {
     id: 11,
-    title: "ENVIRONMENTAL & GREEN CHEMICALS",
+    title: "LABORATORY CHEMICALS",
+    component: <Project11 />,
   },
   {
     id: 12,
-    title: "LABORATORY CHEMICALS",
-  },
-  {
-    id: 13,
     title: "BASIC INDUSTRIAL  CHEMICALS",
+    component: <Project12 />,
   },
 ];
 
 const ProductAndServices = () => {
-  const [active, setActive] = useState("active");
+  const [active, setActive] = useQueryState("active");
   console.log("active", active, typeof active);
   return (
     <>
@@ -102,14 +109,16 @@ const ProductAndServices = () => {
                 <li
                   key={item.id}
                   role="button"
-                  onClick={() => setActive(String(item.id))}
+                  onClick={() => {
+                    setActive(String(item.id));
+                  }}
                   className="inline-flex justify-end items-center gap-[17px]"
                 >
                   <span
                     className={
                       Number(active) === item.id
-                        ? "w-[43px]"
-                        : "w-[43px] rotate-90"
+                        ? "w-[43px] transition-all duration-300"
+                        : "w-[43px] transition-all duration-300 rotate-90"
                     }
                   >
                     <TargetPoint
@@ -125,151 +134,24 @@ const ProductAndServices = () => {
           </ul>
         </div>
         <div className="w-full">
-          {/* <div
-            style={{
-              backgroundImage: "url('/1.png')",
-            }}
-            className="xl:pl-[100px] bg-cover bg-no-repeat 2xl:pl-[140px]"
-          >
-            <div
-              style={{
-                backgroundImage:
-                  "linear-gradient(90deg, rgb(46 49 144 / 70%) 0%, rgb(3 95 157 / 88%) 100%)",
-              }}
-              className="w-full xl:pl-[146px] 2xl:pl-[196px] pt-[76px] pb-[96px]"
-            >
-              <div className="relative 2xl:max-w-[801px] xl:max-w-[601px]">
-                <h4
-                  style={{
-                    transformOrigin: "0 0",
-                    transform: "rotate(270deg)",
-                    bottom: 0,
-                    width: "100%",
-                    marginLeft: "auto",
-                    textAlign: "left",
-                  }}
-                  className="xl:text-[29px] xl2:text-[34px] 2xl:text-[41px] xl:left-[-80px] 2xl:left-[-120px] absolute text-white font-extrabold"
-                >
-                  {active && serviceList[Number(active) - 1]?.title}
-                </h4>
-                <h3
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="100"
-                  className="text-secondary xl:text-[26px] xl2:text-[29px] 2xl:text-[38px] font-extrabold"
-                >
-                  Fueling the Future: Navigate Oil Fields with Our Advanced
-                  Chemical Solutions
-                </h3>
-                <p
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="300"
-                  className="text-white font-normal mt-3 mb-6 xl:text-2xl 2xl:text-[29px]"
-                >
-                  Specialized chemicals for the oil and gas industry, covering
-                  drilling fluids, production chemicals, and cementing chemicals
-                  supporting various stages of oil & gas exploration, extraction
-                  & refining.
-                </p>
-
-                <ul className="text-white list-disc pl-6">
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="400"
-                    className="font-normal xl:text-2xl 2xl:text-[29px]"
-                  >
-                    Drilling Fluids and Additives
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="450"
-                    className="font-normal xl:text-2xl 2xl:text-[29px]"
-                  >
-                    Specialty Chemicals
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="500"
-                    className="font-normal xl:text-2xl 2xl:text-[29px]"
-                  >
-                    Mud Chemicals
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="550"
-                    className="font-normal xl:text-2xl 2xl:text-[29px]"
-                  >
-                    Cementing Additives
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="600"
-                    className="font-normal xl:text-2xl 2xl:text-[29px]"
-                  >
-                    Production Chemicals
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="650"
-                    className="font-normal xl:text-2xl 2xl:text-[29px]"
-                  >
-                    Well Completion and Stimulation Chemicals
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="700"
-                    className="font-normal xl:text-2xl 2xl:text-[29px]"
-                  >
-                    Enhanced Oil Recovery (EOR) Chemicals
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="750"
-                    className="font-normal xl:text-2xl 2xl:text-[29px]"
-                  >
-                    Wellbore Cleaners
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="800"
-                    className="font-normal xl:text-2xl 2xl:text-[29px]"
-                  >
-                    Gas Treatment Chemicals
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="850"
-                    className="font-normal xl:text-2xl 2xl:text-[29px]"
-                  >
-                    Refinery Chemicals
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> */}
-          <Project1 />
-          <Project2 />
-          <Project3 />
-          <Project4 />
-          <Project5 />
-          <Project6 />
-          <Project7 />
-          <Project8 />
-          <Project9 />
-          <Project10 />
-          <Project11 />
-          <Project12 />
+          {Number(active) ? (
+            serviceList[Number(active) - 1].component
+          ) : (
+            <>
+              <Project1 />
+              <Project2 />
+              <Project3 />
+              <Project4 />
+              <Project5 />
+              <Project6 />
+              <Project7 />
+              <Project8 />
+              <Project9 />
+              <Project10 />
+              <Project11 />
+              <Project12 />
+            </>
+          )}
         </div>
       </section>
       <span className="absolute xl:top-full opacity-50 right-0 z-10">
@@ -280,4 +162,12 @@ const ProductAndServices = () => {
   );
 };
 
-export default ProductAndServices;
+function ProductAndServicesWrappedSuspense() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ProductAndServices />
+    </Suspense>
+  );
+}
+
+export default ProductAndServicesWrappedSuspense;
