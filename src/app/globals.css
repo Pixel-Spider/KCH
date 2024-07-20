@@ -58,6 +58,7 @@ body {
   left: unset !important;
   right: 85px !important;
 }
+
 .slick-arrow {
   width: 40px !important;
   height: 40px !important;
@@ -110,6 +111,36 @@ li.navbar-dropdown .dropdown a {
 }
 .navbar-dropdown .dropdown a:hover {
   padding-left: 30px;
+}
+#partners .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.projects .slick-prev {
+  left: -100px !important;
+}
+
+.projects .slick-next {
+  right: -100px !important;
+}
+
+.projects .slick-arrow {
+  filter: invert(1);
+}
+
+#partners .slick-prev {
+  left: -100px !important;
+  border-color: #231f20 !important;
+}
+#partners .slick-prev img,
+#partners .slick-next {
+  filter: contrast(0.1) !important;
+}
+
+#partners .slick-next {
+  right: -100px !important;
+  border-color: #231f20 !important;
 }
 
 @media (min-width: 641px) {

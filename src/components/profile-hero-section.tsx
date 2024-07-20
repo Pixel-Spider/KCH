@@ -32,11 +32,13 @@ SwiperCore.use([Autoplay]);
 
 export function NextArrow(props) {
   const { className, style, onClick } = props;
+  console.log("props99", props);
   return (
     <button
       className={[
         "slick-arrow slick-next",
         "border absolute z-10 border-white rounded-full",
+        className,
       ].join(" ")}
       onClick={onClick}
       style={{
@@ -59,6 +61,7 @@ export function PrevArrow(props) {
       className={[
         "slick-arrow absolute z-10 slick-prev",
         "border border-white rounded-full top-96",
+        className,
       ].join(" ")}
       style={{
         ...style,
@@ -78,7 +81,7 @@ export default function App() {
   return (
     <div className="relative">
       <PrevArrow />
-      <NextArrow />
+      <NextArrow className="right-[-100px]" />
       <Swiper
         grabCursor={true}
         effect={"creative"}
