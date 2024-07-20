@@ -10,7 +10,12 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <HeroSection />
+        <HeroSection
+          title="KUWAIT CHEMICAL HOUSE COMPANY"
+          headTitle="Beyond Boundaries. Beyond Limits."
+          subTitle="The Sky is Not the Limit…"
+          initialImage={1}
+        />
         <AboutUs />
         <OurProductAndService />
       </main>

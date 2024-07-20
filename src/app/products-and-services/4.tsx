@@ -27,7 +27,7 @@ const Project4 = () => {
               }}
               className="xl:text-[29px] xl2:text-[34px] 2xl:text-[41px] xl:left-[-80px] 2xl:left-[-120px] absolute text-white font-extrabold"
             >
-              AVIATION CHEMICAL
+              AVIATION CHEMICALS
             </span>
             <h3
               data-aos="fade-up"

@@ -62,7 +62,12 @@ function PrevArrow(props: any) {
   );
 }
 
-export default function HeroSection() {
+export default function HeroSection({
+  title = "",
+  subTitle = "",
+  headTitle = "",
+  initialImage = 1,
+}) {
   const nextSlideHandler = React.useRef<any>();
   const previousSlideHandler = React.useRef<any>();
   return (
@@ -73,7 +78,7 @@ export default function HeroSection() {
         }}
         height={"90vh"}
         controller={{
-          initialSlide: 1,
+          initialSlide: initialImage,
           slidingDuration: 1500,
           slidingDelay: 100,
           goToNextSlidePointer: nextSlideHandler,
@@ -88,40 +93,55 @@ export default function HeroSection() {
         }}
       >
         <Overlay className="">
-          <div className=" pl-6.5 md:px-20 2xl:pb-48 2xl:px-2xl-2  xl:pl-[150px] flex bg-[rgba(18,18,18,0.35)] flex-col justify-center 2xl:justify-end text-white absolute top-0 left-0 right-0 bottom-0">
-            <div className="relative">
-              <div className=" xl:w-2/3 2xl:w-3/4">
-                <p
-                  data-aos-duration="1000"
-                  data-aos="fade-up"
-                  className="aos text-xs md:text-lg xl:text-xl 2xl:text-[30px] font-medium"
-                >
-                  Kuwait Chemical House Company
-                </p>
-                <h1
-                  data-aos-duration="1000"
-                  data-aos-delay="500"
-                  data-aos="fade-up"
-                  className="aos text-[48px] md:text-[60px] lg:text-[70px] xl:text-[80px] 2xl:text-[115px] leading-tight	"
-                >
-                  Beyond Boundaries. Beyond Limits.
-                </h1>
-                <p
-                  data-aos-duration="1000"
-                  data-aos-delay="1000"
-                  data-aos="fade-up"
-                  className="text-lg aos  xl:text-3xl xl:mt-5 2xl:text-[48px] font-medium"
-                >
-                  The Sky is Not the Limit…
-                </p>
+          <div className="pl-6.5 md:px-20 2xl:px-2xl-2  xl:pl-[150px] flex bg-[rgba(18,18,18,0.35)] flex-col justify-center 2xl:justify-end text-white absolute top-0 left-0 right-0 bottom-0">
+            <div className="basis-[50%]" />
+            <div className=" basis-[50%]">
+              <div className="relative w-full ">
+                <div className="xl:w-2/3 2xl:w-3/4">
+                  {title && (
+                    <p
+                      data-aos-duration="1000"
+                      data-aos="fade-up"
+                      className="aos text-xs md:text-lg xl:text-xl 2xl:text-[30px] font-medium"
+                    >
+                      Kuwait Chemical House Company
+                    </p>
+                  )}
+                  {headTitle && (
+                    <h1
+                      data-aos-duration="1000"
+                      data-aos-delay="500"
+                      data-aos="fade-up"
+                      className="aos text-[48px] md:text-[60px] lg:text-[70px] xl:text-[80px] 2xl:text-[115px] leading-tight	"
+                    >
+                      {headTitle}
+                    </h1>
+                  )}
+                  {subTitle && (
+                    <p
+                      data-aos-duration="1000"
+                      data-aos-delay="1000"
+                      data-aos="fade-up"
+                      className="text-lg aos  xl:text-3xl xl:mt-5 2xl:text-[48px] font-medium"
+                    >
+                      The Sky is Not the Limit…
+                    </p>
+                  )}
+                </div>
+                <PrevArrow onClick={previousSlideHandler} />
+                <NextArrow onClick={nextSlideHandler} />
               </div>
-              <PrevArrow onClick={previousSlideHandler} />
-              <NextArrow onClick={nextSlideHandler} />
             </div>
           </div>
         </Overlay>
         <Slide
-          label="Giau Pass - Italy"
+          background={{
+            backgroundImageSrc: "/hero-image-lg.jpg",
+            backgroundAnimation: "zoom",
+            backgroundAnimationDuration: "10000",
+          }}
+        />
+        <Slide
           background={{
             backgroundImageSrc: "/profile_hero-bg1.jpg",
             backgroundAnimation: "zoom",
@@ -130,27 +150,16 @@ export default function HeroSection() {
         />
 
         <Slide
-          label="Bogliasco - Italy"
           background={{
-            backgroundImageSrc: "/hero-image-lg.jpg",
+            backgroundImageSrc: "/hero-3.jpg",
             backgroundAnimation: "zoom",
             backgroundAnimationDuration: "10000",
           }}
         />
 
         <Slide
-          label="County Clare - Ireland"
           background={{
-            backgroundImageSrc: "/hero-image-lg.jpg",
-            backgroundAnimation: "zoom",
-            backgroundAnimationDuration: "10000",
-          }}
-        />
-
-        <Slide
-          label="Crater Rock, OR - United States"
-          background={{
-            backgroundImageSrc: "/hero-image-lg.jpg",
+            backgroundImageSrc: "/hero-bg-4.jpg",
             backgroundAnimation: "zoom",
             backgroundAnimationDuration: "10000",
           }}

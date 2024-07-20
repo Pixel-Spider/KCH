@@ -15,7 +15,11 @@ const Profile = () => {
   return (
     <>
       <Header />
-      <HeroSection />
+      <HeroSection
+        headTitle="Our Chemical Journey:"
+        subTitle="Pioneering Excellence in Trading"
+        initialImage={2}
+      />
       <div className="px-6.5 md:px-20 xl:px-[150px] 2xl:px-[185px]">
         <ChairManMessage />
         <OurTeam />

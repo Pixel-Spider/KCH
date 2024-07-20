@@ -54,7 +54,11 @@ const CaseStudy = () => {
   return (
     <>
       <Header />
-      <HeroSection />
+      <HeroSection
+        headTitle="Excellence Guaranteed:"
+        subTitle="Uncompromising Quality in Every Molecule"
+        initialImage={4}
+      />
       <section className="pt-[54px] pb-[134px]  bg-neutral">
         <div className="mx-auto w-[63.28px] h-[3px] bg-secondary" />
         <h3 className="text-4xl 2xl:text-[50.11px] leading-[63px] mt-4 mb-[46px] text-primary font-extrabold text-center">

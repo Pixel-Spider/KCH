@@ -89,7 +89,11 @@ const ProductAndServices = () => {
   return (
     <>
       <Header />
-      <HeroSection />
+      <HeroSection
+        headTitle="Tailoring Solutions:"
+        subTitle="Transforming Industries with Our Chemical Expertise"
+        initialImage={3}
+      />
       <section className="pb-[400px] flex bg-service-bg-img bg-service-bg-img-size bg-no-repeat bg-about-us-position">
         <div className="xl:w-[380px] xl:pr-[60px] xl2:pr-[70px] 2xl:pr-[80px]  xl2:w-[440px] 2xl:w-[480px] shrink-0 text-center">
           <div
