@@ -61,13 +61,20 @@ const CaseStudy = () => {
       />
       <section className="pt-[54px] pb-[134px]  bg-neutral">
         <div className="mx-auto w-[63.28px] h-[3px] bg-secondary" />
-        <h3 className="text-4xl 2xl:text-[50.11px] leading-[63px] mt-4 mb-[46px] text-primary font-extrabold text-center">
+        <h3
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          className="text-4xl 2xl:text-[50.11px] leading-[63px] mt-4 mb-[46px] text-primary font-extrabold text-center"
+        >
           SUCCESSFUL PROJECTS
         </h3>
         <div
           style={{
             boxShadow: "5.33px 5.33px 8.28px 0px #8F969BCC",
           }}
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-delay="500"
           className="bg-white w-9/12 2xl:w-[1446.77px] mb-[42px] items-center 2xl:max-w-[1445px] mx-auto p-6 2xl:py-[40px] 2xl:px-[42px] flex gap-[37px]"
         >
           <Image
@@ -80,7 +87,12 @@ const CaseStudy = () => {
             className="basis-[50%] shrink-0"
           />
           <div>
-            <div className="flex gap-4 mb-[34px]">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="700"
+              className="flex gap-4 mb-[34px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
@@ -89,7 +101,12 @@ const CaseStudy = () => {
                 <span className="block font-normal">Maleic Anhyride Plant</span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[29px]">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="800"
+              className="flex gap-4 mb-[29px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
@@ -98,7 +115,12 @@ const CaseStudy = () => {
                 <span className="block font-normal">Petrochemicals</span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[37px]">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="900"
+              className="flex gap-4 mb-[37px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
@@ -109,7 +131,12 @@ const CaseStudy = () => {
                 </span>
               </h4>
             </div>
-            <div className="flex gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1000"
+              className="flex gap-4"
+            >
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
@@ -135,6 +162,8 @@ const CaseStudy = () => {
                     top: "50%",
                     transform: "translateY(-50%)",
                   }}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
                   className="max-w-[259px] leading-tight border-l-[7px] border-l-primary pl-5 relative z-10 text-white text-[33px]"
                 >
                   Maleic Anhyride Plant
@@ -152,6 +181,9 @@ const CaseStudy = () => {
                     top: "50%",
                     transform: "translateY(-50%)",
                   }}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="200"
                   className="max-w-[259px] leading-tight border-l-[7px] border-l-primary pl-5 relative z-10 text-white text-[33px]"
                 >
                   Black Powder Removal from Crude Oil Pipe Line
@@ -169,6 +201,9 @@ const CaseStudy = () => {
                     top: "50%",
                     transform: "translateY(-50%)",
                   }}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="400"
                   className="max-w-[259px] leading-tight border-l-[7px] border-l-primary pl-5 relative z-10 text-white text-[33px]"
                 >
                   Soil Remediation North & South West Kuwait
@@ -186,6 +221,9 @@ const CaseStudy = () => {
                     top: "50%",
                     transform: "translateY(-50%)",
                   }}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="800"
                   className="max-w-[259px] leading-tight border-l-[7px] border-l-primary pl-5 relative z-10 text-white text-[33px]"
                 >
                   Demulsifer Bottle Test
@@ -203,6 +241,9 @@ const CaseStudy = () => {
                     top: "50%",
                     transform: "translateY(-50%)",
                   }}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="1000"
                   className="max-w-[259px] leading-tight border-l-[7px] border-l-primary pl-5 relative z-10 text-white text-[33px]"
                 >
                   Viscosity Reducer
@@ -220,6 +261,9 @@ const CaseStudy = () => {
                     top: "50%",
                     transform: "translateY(-50%)",
                   }}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="120"
                   className="max-w-[259px] leading-tight border-l-[7px] border-l-primary pl-5 relative z-10 text-white text-[33px]"
                 >
                   Sulfur Project
@@ -237,7 +281,7 @@ const CaseStudy = () => {
               style={{
                 clipPath: "polygon(0 0, 92% 0, 100% 100%, 8% 100%)",
               }}
-              className="bg-secondary mt-[54px] mx-auto text-xl px-[111px] py-[28px] leading-[20px] text-white font-semibold"
+              className="bg-secondary butn butn__new mt-[54px] mx-auto text-xl px-[111px] py-[28px] leading-[20px] text-white font-semibold"
             >
               VIEW ALL
             </button>
@@ -247,7 +291,10 @@ const CaseStudy = () => {
       <section>
         <div className="pt-[93px] text-center pb-[137px]  bg-partnerBg bg-no-repeat">
           <span className="inline-block h-[3px] mb-4 w-[63px] bg-secondary" />
-          <h4 className="text-[50px] font-bold text-primary text-center leading-[68px]">
+          <h4
+            data-aos="fade-up"
+            className="text-[50px] font-bold text-primary text-center leading-[68px]"
+          >
             PARTNERS
           </h4>
         </div>
@@ -319,7 +366,11 @@ const CaseStudy = () => {
       <section>
         <div className="pt-[46px] text-center pb-[102px]">
           <span className="inline-block h-[3px] mb-4 w-[63px] bg-secondary" />
-          <h4 className="text-[50px] font-bold text-primary text-center leading-[68px]">
+          <h4
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="text-[50px] font-bold text-primary text-center leading-[68px]"
+          >
             CLIENTS
           </h4>
         </div>
@@ -330,6 +381,9 @@ const CaseStudy = () => {
               alt="client- logo"
               width={"auto"}
               height={"auto"}
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="100"
               className="object-cover grayscale hover:grayscale-0 transition-all"
             />
             <img
@@ -337,6 +391,9 @@ const CaseStudy = () => {
               alt="client- logo"
               width={"auto"}
               height={"auto"}
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="200"
               className="object-cover grayscale hover:grayscale-0 transition-all"
             />
             <img
@@ -344,6 +401,9 @@ const CaseStudy = () => {
               alt="client- logo"
               width={"auto"}
               height={"auto"}
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="300"
               className="object-cover grayscale hover:grayscale-0 transition-all"
             />
             <img
@@ -351,6 +411,9 @@ const CaseStudy = () => {
               alt="client- logo"
               width={"auto"}
               height={"auto"}
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="400"
               className="object-cover grayscale hover:grayscale-0 transition-all"
             />
             <img
@@ -358,6 +421,9 @@ const CaseStudy = () => {
               alt="client- logo"
               width={"auto"}
               height={"auto"}
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
               className="object-cover grayscale hover:grayscale-0 transition-all"
             />
             <img
@@ -365,6 +431,9 @@ const CaseStudy = () => {
               alt="client- logo"
               width={"auto"}
               height={"auto"}
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="600"
               className="object-cover grayscale hover:grayscale-0 transition-all"
             />
             <img
@@ -372,6 +441,9 @@ const CaseStudy = () => {
               alt="client- logo"
               width={"auto"}
               height={"auto"}
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="700"
               className="object-cover grayscale hover:grayscale-0 transition-all"
             />
           </div>
@@ -381,6 +453,9 @@ const CaseStudy = () => {
               alt="client- logo"
               width={"auto"}
               height={"auto"}
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="800"
               className="object-cover grayscale hover:grayscale-0 transition-all"
             />
             <img
@@ -389,6 +464,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="900"
             />
             <img
               src="/client-10.svg"
@@ -396,6 +474,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1000"
             />
             <img
               src="/client-11.svg"
@@ -403,6 +484,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1100"
             />
             <img
               src="/client-12.svg"
@@ -410,6 +494,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1200"
             />
             <img
               src="/client-13.svg"
@@ -417,6 +504,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1300"
             />
             <img
               src="/client-14.svg"
@@ -424,6 +514,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1400"
             />
           </div>
           <div className="grid grid-cols-7 place-content-center place-items-center gap-6">
@@ -433,6 +526,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1500"
             />
             <img
               src="/client-16.svg"
@@ -440,6 +536,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1600"
             />
             <img
               src="/client-17.svg"
@@ -447,6 +546,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1700"
             />
             <img
               src="/client-18.svg"
@@ -454,6 +556,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1800"
             />
             <img
               src="/client-19.svg"
@@ -461,6 +566,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1900"
             />
             <img
               src="/client-20.svg"
@@ -468,6 +576,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="2000"
             />
             <img
               src="/client-21.svg"
@@ -475,6 +586,9 @@ const CaseStudy = () => {
               width={"auto"}
               height={"auto"}
               className="object-cover grayscale hover:grayscale-0 transition-all"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="2100"
             />
           </div>
         </div>

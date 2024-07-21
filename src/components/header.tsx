@@ -96,7 +96,7 @@ const Header = () => {
               <ActiveLink href={"/case-study"}>Case Study</ActiveLink>{" "}
               <li>Contact us</li>
             </ul>
-            <button className="bg-secondary absolute bottom-0 text-white px-6.5 md:px-20 py-5 w-full">
+            <button className="butn butn__new bg-secondary absolute bottom-0 text-white px-6.5 md:px-20 py-5 w-full">
               GET A QUOTE
             </button>
           </div>

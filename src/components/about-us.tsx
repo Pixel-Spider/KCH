@@ -87,7 +87,7 @@ const AboutUs = () => {
             clipPath: "polygon(0 0, 95% 0, 100% 100%, 5% 100%)",
             background: "linear-gradient(90deg, #2E3190 0%, #045E9D 100%)",
           }}
-          className="bg-primary  px-16 py-3 leading-[20px] text-white font-semibold mt-5"
+          className="bg-primary butn butn__new px-16 py-3 leading-[20px] text-white font-semibold mt-5"
         >
           READ MORE
         </button>

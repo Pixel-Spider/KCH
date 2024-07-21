@@ -94,20 +94,20 @@ const ProductAndServices = () => {
         subTitle="Transforming Industries with Our Chemical Expertise"
         initialImage={3}
       />
-      <section className="pb-[400px] flex bg-service-bg-img bg-service-bg-img-size bg-no-repeat bg-about-us-position">
-        <div className="xl:w-[380px] xl:pr-[60px] xl2:pr-[70px] 2xl:pr-[80px]  xl2:w-[440px] 2xl:w-[480px] shrink-0 text-center">
+      <section className="pb-[900px] flex bg-service-bg-img bg-service-bg-img-size-2 bg-no-repeat bg-about-us-position">
+        <div className="xl:w-[380px] xl2:w-[440px] 2xl:w-[480px] shrink-0 text-center">
           <div
             style={{
               clipPath:
                 "polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%, 0 0)",
             }}
-            className="xl:w-[200px] xl2:w-[220px] 2xl:w-[276px] ml-auto pb-4 bg-secondary-linear"
+            className="xl:w-[200px] xl:mr-[60px] xl2:mr-[70px] 2xl:mr-[80px] xl2:w-[220px] 2xl:w-[276px] ml-auto pb-4 bg-secondary-linear"
           >
             <h3 className="xl:text-2xl 2xl:text-[34px] leading-tight py-4 px-3 text-center text-white">
               What We Offer For You
             </h3>
           </div>
-          <ul className="mt-[70px] flex flex-col gap-[44px] uppercase">
+          <ul className="mt-[70px] xl:mr-[60px] xl2:mr-[70px] 2xl:mr-[80px] flex flex-col gap-[44px] uppercase">
             {serviceList.map((item) => {
               return (
                 <li
@@ -136,6 +136,18 @@ const ProductAndServices = () => {
               );
             })}
           </ul>
+          {!active && (
+            <>
+              <div className="bg-product-service-bg bg-no-repeat bg-cover h-[1400px]" />
+              <div className="bg-product-service-bg bg-no-repeat bg-cover h-[1400px]" />
+              <div className="bg-product-service-bg bg-no-repeat bg-cover h-[1400px]" />
+              <div className="bg-product-service-bg bg-no-repeat bg-cover h-[1400px]" />
+              <div className="bg-product-service-bg bg-no-repeat bg-cover h-[1400px]" />
+              <div className="bg-product-service-bg bg-no-repeat bg-cover h-[1400px]" />
+              <div className="bg-product-service-bg bg-no-repeat bg-cover h-[1400px]" />
+              <div className="bg-product-service-bg bg-no-repeat bg-cover h-[1400px]" />
+            </>
+          )}
         </div>
         <div className="w-full">
           {Number(active) ? (

@@ -12,13 +12,19 @@ const Projects = () => {
       <Header />
       <section className="pt-[54px] pb-[134px]  bg-neutral">
         <div className="mx-auto w-[63.28px] h-[3px] bg-secondary" />
-        <h3 className="text-4xl 2xl:text-[50.11px] leading-[63px] mt-4 mb-[46px] text-primary font-extrabold text-center">
+        <h3
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          className="text-4xl 2xl:text-[50.11px] leading-[63px] mt-4 mb-[46px] text-primary font-extrabold text-center"
+        >
           SUCCESSFUL PROJECTS
         </h3>
         <div
           style={{
             boxShadow: "5.33px 5.33px 8.28px 0px #8F969BCC",
           }}
+          data-aos="zoom-in"
+          data-aos-duration="1500"
           className="bg-white  mb-[42px] items-center w-9/12 2xl:w-[1446.77px] mx-auto p-6 2xl:py-[40px] 2xl:px-[42px] flex gap-[37px]"
         >
           <Image
@@ -31,7 +37,12 @@ const Projects = () => {
             className="basis-[50%] shrink-0"
           />
           <div>
-            <div className="flex gap-4 mb-[34px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[34px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
@@ -40,7 +51,12 @@ const Projects = () => {
                 <span className="block font-normal">Maleic Anhyride Plant</span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[29px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[29px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
@@ -49,7 +65,12 @@ const Projects = () => {
                 <span className="block font-normal">Petrochemicals</span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[37px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[37px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
@@ -60,7 +81,12 @@ const Projects = () => {
                 </span>
               </h4>
             </div>
-            <div className="flex gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1500"
+              className="flex gap-4"
+            >
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
@@ -76,6 +102,8 @@ const Projects = () => {
             boxShadow: "5.33px 5.33px 8.28px 0px #8F969BCC",
           }}
           className="bg-white mb-[42px] items-center w-9/12 2xl:w-[1446.77px] mx-auto p-6 2xl:py-[40px] 2xl:px-[42px] flex gap-[37px]"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
         >
           <Image
             src="/project-2.jpg"
@@ -87,7 +115,12 @@ const Projects = () => {
             className="basis-[50%] shrink-0"
           />
           <div>
-            <div className="flex gap-4 mb-[34px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[34px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
@@ -98,7 +131,12 @@ const Projects = () => {
                 </span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[29px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[29px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
@@ -107,7 +145,12 @@ const Projects = () => {
                 <span className="block font-normal">Oil & Gas</span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[37px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[37px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
@@ -116,7 +159,12 @@ const Projects = () => {
                 <span className="block font-normal">Kuwait Oil Company</span>
               </h4>
             </div>
-            <div className="flex gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1500"
+              className="flex gap-4"
+            >
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
@@ -131,6 +179,8 @@ const Projects = () => {
           style={{
             boxShadow: "5.33px 5.33px 8.28px 0px #8F969BCC",
           }}
+          data-aos="zoom-in"
+          data-aos-duration="1500"
           className="bg-white mb-[42px] items-center w-9/12 2xl:w-[1446.77px] mx-auto p-6 2xl:py-[40px] 2xl:px-[42px] flex gap-[37px]"
         >
           <Image
@@ -143,7 +193,12 @@ const Projects = () => {
             className="basis-[50%] shrink-0"
           />
           <div>
-            <div className="flex gap-4 mb-[34px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[34px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
@@ -154,7 +209,12 @@ const Projects = () => {
                 </span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[29px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[29px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
@@ -163,7 +223,12 @@ const Projects = () => {
                 <span className="block font-normal">Oil & Gas</span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[37px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[37px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
@@ -172,7 +237,12 @@ const Projects = () => {
                 <span className="block font-normal">Kuwait Oil Company</span>
               </h4>
             </div>
-            <div className="flex gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1500"
+              className="flex gap-4"
+            >
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
@@ -188,6 +258,8 @@ const Projects = () => {
             boxShadow: "5.33px 5.33px 8.28px 0px #8F969BCC",
           }}
           className="bg-white mb-[42px] items-center w-9/12 2xl:w-[1446.77px] mx-auto p-6 2xl:py-[40px] 2xl:px-[42px] flex gap-[37px]"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
         >
           <Image
             src="/project-4.jpg"
@@ -199,7 +271,12 @@ const Projects = () => {
             className="basis-[50%] shrink-0"
           />
           <div>
-            <div className="flex gap-4 mb-[34px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[34px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
@@ -210,7 +287,12 @@ const Projects = () => {
                 </span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[29px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[29px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
@@ -219,7 +301,12 @@ const Projects = () => {
                 <span className="block font-normal">Oil & Gas</span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[37px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[37px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
@@ -228,7 +315,12 @@ const Projects = () => {
                 <span className="block font-normal">Kuwait Oil Company</span>
               </h4>
             </div>
-            <div className="flex gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1500"
+              className="flex gap-4"
+            >
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
@@ -244,6 +336,8 @@ const Projects = () => {
             boxShadow: "5.33px 5.33px 8.28px 0px #8F969BCC",
           }}
           className="bg-white mb-[42px] items-center w-9/12 2xl:w-[1446.77px] mx-auto p-6 2xl:py-[40px] 2xl:px-[42px] flex gap-[37px]"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
         >
           <Image
             src="/project-5.jpg"
@@ -255,7 +349,12 @@ const Projects = () => {
             className="basis-[50%] shrink-0"
           />
           <div>
-            <div className="flex gap-4 mb-[34px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[34px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
@@ -264,7 +363,12 @@ const Projects = () => {
                 <span className="block font-normal">Viscosity Reducer</span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[29px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[29px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
@@ -273,7 +377,12 @@ const Projects = () => {
                 <span className="block font-normal">Oil & Gas</span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[37px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[37px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
@@ -282,7 +391,12 @@ const Projects = () => {
                 <span className="block font-normal">Kuwait Oil Company</span>
               </h4>
             </div>
-            <div className="flex gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1500"
+              className="flex gap-4"
+            >
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
@@ -298,6 +412,8 @@ const Projects = () => {
             boxShadow: "5.33px 5.33px 8.28px 0px #8F969BCC",
           }}
           className="bg-white mb-[42px] items-center w-9/12 2xl:w-[1446.77px] mx-auto p-6 2xl:py-[40px] 2xl:px-[42px] flex gap-[37px]"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
         >
           <Image
             src="/project-6.jpg"
@@ -309,7 +425,12 @@ const Projects = () => {
             className="basis-[50%] shrink-0"
           />
           <div>
-            <div className="flex gap-4 mb-[34px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[34px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
@@ -318,7 +439,12 @@ const Projects = () => {
                 <span className="block font-normal">Sulfur Project</span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[29px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[29px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
@@ -327,7 +453,12 @@ const Projects = () => {
                 <span className="block font-normal">Petrochemicals</span>
               </h4>
             </div>
-            <div className="flex gap-4 mb-[37px]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1500"
+              className="flex gap-4 mb-[37px]"
+            >
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
@@ -338,7 +469,12 @@ const Projects = () => {
                 </span>
               </h4>
             </div>
-            <div className="flex gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1500"
+              className="flex gap-4"
+            >
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
