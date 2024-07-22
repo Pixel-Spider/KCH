@@ -28,6 +28,7 @@ const config: Config = {
         project4: "url('/project-4.jpg')",
         project5: "url('/project-5.jpg')",
         project6: "url('/project-6.jpg')",
+        contactUsBg: "url('/contact-us-bg.png')",
         profileBg:
           "linear-gradient(90deg, rgba(46,49,144,0.8057816876750701) 19%, rgba(3,95,157,0.8674063375350141) 69%), url('/profileBg2.png')",
         "product-service-bg": "url('/product-service-bg.svg')",
@@ -35,6 +36,7 @@ const config: Config = {
 
       backgroundPosition: {
         "about-us-position": "left bottom, right bottom",
+        "contact-us-position": "left bottom",
       },
       backgroundSize: {
         "about-us-size": "50% 150px, 50% 60%",

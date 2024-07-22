@@ -164,6 +164,13 @@ export default function HeroSection({
             backgroundAnimationDuration: "10000",
           }}
         />
+        <Slide
+          background={{
+            backgroundImageSrc: "/hero-bg-5.jpg",
+            backgroundAnimation: "zoom",
+            backgroundAnimationDuration: "10000",
+          }}
+        />
       </HeroSlider>
       {/* <PrevArrow />
       <NextArrow />

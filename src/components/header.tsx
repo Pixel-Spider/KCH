@@ -94,7 +94,7 @@ const Header = () => {
                 </ActiveLink>
               </li>
               <ActiveLink href={"/case-study"}>Case Study</ActiveLink>{" "}
-              <li>Contact us</li>
+              <ActiveLink href={"/contact-us"}>Contact us</ActiveLink>
             </ul>
             <button className="butn butn__new bg-secondary absolute bottom-0 text-white px-6.5 md:px-20 py-5 w-full">
               GET A QUOTE
@@ -135,7 +135,7 @@ const Header = () => {
           <ActiveLink href={"/case-study"}>Case Study</ActiveLink>{" "}
         </div>
         <div className="xl:mr-[76px] xl2:mr-[82px] 2xl:mr-[102px] text-[#868D9A] whitespace-nowrap">
-          Contact us
+          <ActiveLink href={"/contact-us"}>Contact us</ActiveLink>
         </div>
       </div>
     </header>
