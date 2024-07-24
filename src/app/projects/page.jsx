@@ -5,6 +5,7 @@ import CalendarIcon from "../../../public/calendar.svg";
 import UserIcon from "../../../public/user.svg";
 import Header from "@/components/header";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -12,13 +13,20 @@ const Projects = () => {
       <Header />
       <section className="pt-[54px] pb-[134px]  bg-neutral">
         <div className="mx-auto w-[63.28px] h-[3px] bg-secondary" />
-        <h3
-          data-aos="fade-up"
-          data-aos-duration="1500"
-          className="text-4xl 2xl:text-[50.11px] leading-[63px] mt-4 mb-[46px] text-primary font-extrabold text-center"
-        >
-          SUCCESSFUL PROJECTS
-        </h3>
+        <div className="relative w-9/12 2xl:w-[1446.77px] mx-auto">
+          <Link href="/case-study">
+            <button className="text-primary z-10 top-1/2 -translate-y-1/2 active:translate-y-[1px] transition-all duration-200 absolute left-0  text-xl bg-white px-5 py-2 rounded-md shadow-md mr-auto">
+              Back
+            </button>
+          </Link>
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="text-4xl 2xl:text-[50.11px] leading-[63px] mt-4 mb-[46px] text-primary font-extrabold text-center"
+          >
+            SUCCESSFUL PROJECTS
+          </h3>
+        </div>
         <div
           style={{
             boxShadow: "5.33px 5.33px 8.28px 0px #8F969BCC",
@@ -46,7 +54,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 The Project:
                 <span className="block font-normal">Maleic Anhyride Plant</span>
               </h4>
@@ -60,7 +68,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Category:
                 <span className="block font-normal">Petrochemicals</span>
               </h4>
@@ -74,7 +82,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Client:
                 <span className="block font-normal">
                   Kuwait Petroleum Corporation (KPC)
@@ -90,7 +98,7 @@ const Projects = () => {
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Year:
                 <span className=" font-normal"> 2022</span>
               </h4>
@@ -124,7 +132,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 The Project:
                 <span className="block font-normal">
                   Black Powder Removal from Crude Oil Pipe Line
@@ -140,7 +148,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Category:
                 <span className="block font-normal">Oil & Gas</span>
               </h4>
@@ -154,7 +162,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Client:
                 <span className="block font-normal">Kuwait Oil Company</span>
               </h4>
@@ -168,7 +176,7 @@ const Projects = () => {
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Year:
                 <span className=" font-normal"> 2016</span>
               </h4>
@@ -202,7 +210,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 The Project:
                 <span className="block font-normal">
                   Soil Remediation North & South West Kuwait{" "}
@@ -218,7 +226,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Category:
                 <span className="block font-normal">Oil & Gas</span>
               </h4>
@@ -232,7 +240,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Client:
                 <span className="block font-normal">Kuwait Oil Company</span>
               </h4>
@@ -246,7 +254,7 @@ const Projects = () => {
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Year:
                 <span className=" font-normal"> 2021</span>
               </h4>
@@ -280,7 +288,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 The Project:
                 <span className="block font-normal">
                   Demulsifer Bottle Test
@@ -296,7 +304,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Category:
                 <span className="block font-normal">Oil & Gas</span>
               </h4>
@@ -310,7 +318,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Client:
                 <span className="block font-normal">Kuwait Oil Company</span>
               </h4>
@@ -324,7 +332,7 @@ const Projects = () => {
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Year:
                 <span className=" font-normal"> 2018 - 2019</span>
               </h4>
@@ -358,7 +366,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 The Project:
                 <span className="block font-normal">Viscosity Reducer</span>
               </h4>
@@ -372,7 +380,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Category:
                 <span className="block font-normal">Oil & Gas</span>
               </h4>
@@ -386,7 +394,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Client:
                 <span className="block font-normal">Kuwait Oil Company</span>
               </h4>
@@ -400,7 +408,7 @@ const Projects = () => {
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Year:
                 <span className=" font-normal"> 2018</span>
               </h4>
@@ -434,7 +442,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 The Project:
                 <span className="block font-normal">Sulfur Project</span>
               </h4>
@@ -448,7 +456,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Category:
                 <span className="block font-normal">Petrochemicals</span>
               </h4>
@@ -462,7 +470,7 @@ const Projects = () => {
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Client:
                 <span className="block font-normal">
                   Kuwait Petroleum Corporation
@@ -478,7 +486,7 @@ const Projects = () => {
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Year:
                 <span className=" font-normal"> 2021</span>
               </h4>

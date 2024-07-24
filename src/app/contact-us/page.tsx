@@ -6,6 +6,9 @@ import InstaIcon from "../../../public/insta.svg";
 import FacebookIcon from "../../../public/facebook.svg";
 import XIcon from "../../../public/x.svg";
 import LinkedInIcon from "../../../public/linkedIn.svg";
+import Input from "@/components/input";
+import TextArea from "@/components/textArea";
+import Link from "next/link";
 
 const ContactUs = () => {
   return (
@@ -72,6 +75,56 @@ const ContactUs = () => {
             </h5>
           </div>
           <div className="absolute bottom-0 z-10 w-full h-full bg-contactUsBg bg-no-repeat bg-contain bg-contact-us-position" />
+        </div>
+      </section>
+      <section className="flex mb-[100px]">
+        <div className="basis-1/2">
+          <h5 className="text-[#2E3186] text-center leading-normal max-w-[593px] mx-auto text-3xl font-extrabold 2xl:text-[49px]">
+            GET A QUOTE FROM OUR GLOBAL SUPPLIERS
+          </h5>
+          <img
+            src="/Group-logo.png"
+            alt="logo"
+            width={"100%"}
+            height={"100%"}
+            className="max-w-[650px] mx-auto mt-[73px]"
+          />
+        </div>
+        <div className="basis-1/2">
+          <div className="max-w-[678px] mx-auto">
+            <div className="flex w-full gap-[18px]">
+              <Input label="First Name" />
+              <Input label="First Name" />
+            </div>
+            <Input label="Company" />
+            <Input label="Email" />
+            <Input label="Phone number" />
+            <Input label="Subject" />
+            <TextArea label="Message" />
+
+            <p className="text-primary flex items-center font-normal text-[19px] my-6">
+              <input
+                id="checkbox"
+                className="size-4 mr-4 rounded-none border-black"
+                type="checkbox"
+              />
+              <label htmlFor="checkbox" className="cursor-pointer">
+                By Selecting This you Agree our{" "}
+                <Link href={"#"} className="text-secondary">
+                  Terms & Conditions
+                </Link>
+              </label>
+            </p>
+            <button
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg, #ED801B 0%, #E57114 38%, #D45107 100%)",
+              }}
+              className="bg-secondary w-full mx-auto py-[10px] text-xl text-white font-semibold active:translate-y-1 transition-all duration-200"
+            >
+              Submit
+            </button>
+          </div>
         </div>
       </section>
       <Footer />

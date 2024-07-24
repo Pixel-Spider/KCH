@@ -12,15 +12,62 @@ import CalendarIcon from "../../../public/calendar.svg";
 import UserIcon from "../../../public/user.svg";
 import Slider from "react-slick";
 import HeroSection from "@/components/heroSection";
-import PartnerLogo1 from "../../../public/partner-1.svg";
-import PartnerLogo2 from "../../../public/partner-2.svg";
-import PartnerLogo3 from "../../../public/partner-3.svg";
-import PartnerLogo4 from "../../../public/partner-4.svg";
-import PartnerLogo5 from "../../../public/partner-5.svg";
-import PartnerLogo6 from "../../../public/partner-6.svg";
 import Link from "next/link";
+import { useState } from "react";
+
+const projects = [
+  {
+    id: 1,
+    name: "Maleic Anhyride Plant",
+    category: "Petrochemicals",
+    client: "Kuwait Petroleum Corporation (KPC)",
+    year: "2022",
+    img: "/project-1.jpg",
+  },
+  {
+    id: 2,
+    name: "Black Powder Removal from Crude Oil Pipe Line",
+    category: "Oil & Gas",
+    client: "Kuwait Oil Company",
+    year: "2016",
+    img: "/project-2.jpg",
+  },
+  {
+    id: 3,
+    name: "Soil Remediation North & South West Kuwait",
+    category: "Oil & Gas",
+    client: "Kuwait Oil Company",
+    year: "2021",
+    img: "/project-3.jpg",
+  },
+  {
+    id: 4,
+    name: "Demulsifer Bottle Test",
+    category: "Oil & Gas",
+    client: "Kuwait Oil Company",
+    year: "2018 - 2019",
+    img: "/project-4.jpg",
+  },
+  {
+    id: 5,
+    name: "Viscosity Reducer",
+    category: "Oil & Gas",
+    client: "Kuwait Oil Company",
+    year: "2018",
+    img: "/project-5.jpg",
+  },
+  {
+    id: 6,
+    name: "Sulfur Project",
+    category: "Petrochemicals",
+    client: "Kuwait Petroleum Corporation",
+    year: "2021",
+    img: "/project-6.jpg",
+  },
+];
 
 const CaseStudy = () => {
+  const [active, setActive] = useState(0);
   const settings = {
     dots: false,
     infinite: true,
@@ -78,7 +125,7 @@ const CaseStudy = () => {
           className="bg-white w-9/12 2xl:w-[1446.77px] mb-[42px] items-center 2xl:max-w-[1445px] mx-auto p-6 2xl:py-[40px] 2xl:px-[42px] flex gap-[37px]"
         >
           <Image
-            src="/project-1.jpg"
+            src={projects[active].img}
             width={625.85}
             height={584.37}
             alt="project 1"
@@ -96,9 +143,11 @@ const CaseStudy = () => {
               <span className="basis-[52px] shrink-0">
                 <SettingsIcon />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 The Project:
-                <span className="block font-normal">Maleic Anhyride Plant</span>
+                <span className="block font-normal">
+                  {projects[active].name}
+                </span>
               </h4>
             </div>
             <div
@@ -110,9 +159,11 @@ const CaseStudy = () => {
               <span className="basis-[52px] shrink-0">
                 <TagIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Category:
-                <span className="block font-normal">Petrochemicals</span>
+                <span className="block font-normal">
+                  {projects[active].category}
+                </span>
               </h4>
             </div>
             <div
@@ -124,10 +175,10 @@ const CaseStudy = () => {
               <span className="basis-[52px] shrink-0">
                 <UserIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Client:
                 <span className="block font-normal">
-                  Kuwait Petroleum Corporation (KPC)
+                  {projects[active].client}
                 </span>
               </h4>
             </div>
@@ -140,9 +191,9 @@ const CaseStudy = () => {
               <span className="basis-[52px] justify-self-center shrink-0">
                 <CalendarIcon className="mx-auto" />
               </span>
-              <h4 className="text-2xl 2xl:text-[34px] font-semibold text-primary">
+              <h4 className="text-2xl 2xl:text-[34px] leading-snug font-semibold text-primary">
                 Year:
-                <span className=" font-normal"> 2022</span>
+                <span className=" font-normal"> {projects[active].year}</span>
               </h4>
             </div>
           </div>
@@ -152,7 +203,7 @@ const CaseStudy = () => {
           className="w-10/12 2xl:w-[1645px] projects mx-auto"
           {...settings}
         >
-          <div>
+          <div onClick={() => setActive(0)} role="button">
             <div className="p-6 w-[351px] h-[353.17px] 2xl:w-[481px] mx-auto 2xl:h-[453.17px] bg-white">
               <div className="relative flex h-full  bg-no-repeat bg-cover bg-project1 items-center justify-center">
                 <div className="absolute top-0 left-0 bg-[#f1801bd9] w-full h-full" />
@@ -171,7 +222,7 @@ const CaseStudy = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div onClick={() => setActive(1)} role="button">
             <div className="relative p-6 w-[351px] h-[353.17px] 2xl:w-[481px] mx-auto 2xl:h-[453.17px] bg-white">
               <div className="relative flex h-full  bg-no-repeat bg-cover bg-project2 items-center justify-center">
                 <div className="absolute top-0 left-0 bg-[#f1801bd9] w-full h-full" />
@@ -191,7 +242,7 @@ const CaseStudy = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div onClick={() => setActive(2)} role="button">
             <div className="p-6 w-[351px] h-[353.17px] 2xl:w-[481px] mx-auto 2xl:h-[453.17px] bg-white">
               <div className="relative flex h-full  bg-no-repeat bg-cover bg-project3 items-center justify-center">
                 <div className="absolute top-0 left-0 bg-[#f1801bd9] w-full h-full" />
@@ -211,7 +262,7 @@ const CaseStudy = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div onClick={() => setActive(3)} role="button">
             <div className="p-6 w-[351px] h-[353.17px] 2xl:w-[481px] mx-auto 2xl:h-[453.17px] bg-white">
               <div className="relative flex h-full  bg-no-repeat bg-cover bg-project4 items-center justify-center">
                 <div className="absolute top-0 left-0 bg-[#f1801bd9] w-full h-full" />
@@ -231,7 +282,7 @@ const CaseStudy = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div onClick={() => setActive(4)} role="button">
             <div className="p-6 w-[351px] h-[353.17px] 2xl:w-[481px] mx-auto 2xl:h-[453.17px] bg-white">
               <div className="relative flex h-full  bg-no-repeat bg-cover bg-project5 items-center justify-center">
                 <div className="absolute top-0 left-0 bg-[#f1801bd9] w-full h-full" />
@@ -251,7 +302,7 @@ const CaseStudy = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div onClick={() => setActive(5)} role="button">
             <div className="p-6 w-[351px] h-[353.17px] 2xl:w-[481px] mx-auto 2xl:h-[453.17px] bg-white">
               <div className="relative flex h-full  bg-no-repeat bg-cover bg-project6 items-center justify-center">
                 <div className="absolute top-0 left-0 bg-[#f1801bd9] w-full h-full" />

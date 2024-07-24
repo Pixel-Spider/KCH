@@ -38,7 +38,10 @@ const Header = () => {
             <h2 className="basis-[70%] text-md md:text-xl sm:text-lg xl:pl-8 xl2:pl-[78px] 2xl:pl-[88px] lg:text-lg  xl:text-xl 2xl:text-[25px] font-medium">
               KUWAIT CHEMICAL HOUSE COMPANY
             </h2>
-            <span
+
+            <Link
+              href={"https://wa.me/+96594455112"}
+              target="_blank"
               role="button"
               className="w-6 relative xl:top-2 basis-16 md:basis-auto md:w-auto md:inline-flex md:items-center md:gap-2"
             >
@@ -46,16 +49,18 @@ const Header = () => {
               <span className="hidden md:inline-block md:text-md  xl:text-[18px] xl2:text-[20px] 2xl:text-[23px]">
                 00965 9445 5112
               </span>
-            </span>
+            </Link>
           </div>{" "}
-          <div
-            style={{
-              clipPath: "polygon(0 0, 100% 0%, 100% 100%, 16% 100%)",
-            }}
-            className="absolute hidden xl:text-xl  xl2:text-2xl 2xl:text-[26px] leading-[37px] xl:pt-[16px] xl2:pt-[23px] 2xl:pt-[29px] xl:pb-[18px] xl2:pb-[22px] 2xl:pb-[26px] lg:inline-block uppercase lg:text-lg font-semibold text-white bottom-0 right-0 w-60 xl2:pl-20 2xl:w-[304px] lg:w-[150px] lg:pl-6  xl:w-[200px] xl2:w-[280px] xl:pl-10 pl-20 py-3 bg-secondary"
-          >
-            Get a quote
-          </div>
+          <Link href={"/contact-us"}>
+            <div
+              style={{
+                clipPath: "polygon(0 0, 100% 0%, 100% 100%, 16% 100%)",
+              }}
+              className="absolute hidden xl:text-xl  xl2:text-2xl 2xl:text-[26px] leading-[37px] xl:pt-[16px] xl2:pt-[23px] 2xl:pt-[29px] xl:pb-[18px] xl2:pb-[22px] 2xl:pb-[26px] lg:inline-block uppercase lg:text-lg font-semibold text-white bottom-0 right-0 w-60 xl2:pl-20 2xl:w-[304px] lg:w-[150px] lg:pl-6  xl:w-[200px] xl2:w-[280px] xl:pl-10 pl-20 py-3 bg-secondary"
+            >
+              Get a quote
+            </div>
+          </Link>
         </div>
       </div>
       <div
@@ -96,9 +101,11 @@ const Header = () => {
               <ActiveLink href={"/case-study"}>Case Study</ActiveLink>{" "}
               <ActiveLink href={"/contact-us"}>Contact us</ActiveLink>
             </ul>
-            <button className="butn butn__new bg-secondary absolute bottom-0 text-white px-6.5 md:px-20 py-5 w-full">
-              GET A QUOTE
-            </button>
+            <Link href={"/contact-us"}>
+              <button className="butn butn__new bg-secondary absolute bottom-0 text-white px-6.5 md:px-20 py-5 w-full">
+                GET A QUOTE
+              </button>
+            </Link>
           </div>
         </div>
         <h4
