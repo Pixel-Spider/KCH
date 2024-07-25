@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CountUp from "react-countup";
 import CustomCountUp from "./count-up";
+import ReadMoreBtn from "./read-more-button";
 
 const AboutUs = () => {
   return (
@@ -79,18 +80,7 @@ const AboutUs = () => {
           establish a long-lasting business relationship with our esteemed
           customers.
         </p>
-        <button
-          data-aos-duration="1500"
-          data-aos-delay="1300"
-          data-aos="fade-up"
-          style={{
-            clipPath: "polygon(0 0, 95% 0, 100% 100%, 5% 100%)",
-            background: "linear-gradient(90deg, #2E3190 0%, #045E9D 100%)",
-          }}
-          className="bg-primary butn butn__new px-16 py-3 leading-[20px] text-white font-semibold mt-5"
-        >
-          READ MORE
-        </button>
+        <ReadMoreBtn />
       </div>
       <div className="md:col-span-full w-full px-6.5">
         <h2

@@ -35,6 +35,11 @@ body {
     url("./../../public/fonts/Avenir-Medium.ttf") format("truetype");
 }
 
+.PopoverContent {
+  width: var(--radix-popover-trigger-width);
+  max-height: var(--radix-popover-content-available-height);
+}
+
 .slick-dots {
   bottom: 20px !important;
 }

@@ -39,10 +39,19 @@ const ContactUs = () => {
               Tel: +965 23725423 ob: +965-94455112{" "}
             </p>
             <p className="font-extrabold leading-[64px] text-[#D45107] text-4xl 2xl:text-[47px]">
-              Hotline: 0808 0909
+              Hotline:{" "}
+              <Link className="cursor-pointer" href="tel:08080909">
+                0808 0909
+              </Link>
             </p>
             <p className="font-extrabold text-xl leading-[40px] 2xl:text-[29px]">
-              Email: alsoberie@kuwaitchemicalhouse.com
+              Email:{" "}
+              <Link
+                className="cursor-pointer"
+                href="mailto:alsoberie@kuwaitchemicalhouse.com"
+              >
+                alsoberie@kuwaitchemicalhouse.com
+              </Link>
             </p>
             <p className="font-extrabold text-xl  leading-[40px] 2xl:text-[29px]">
               Address: P.O Box: 116 Fintas Code no: 51002 Kuwait
