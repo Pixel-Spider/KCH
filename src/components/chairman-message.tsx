@@ -52,7 +52,7 @@ const ChairManMessage = () => {
           >
             The House of Trust
           </h3>
-          <div className="text-lg md:text-md lg:text-lg 2xl:text-xl 2xl:leading-[32px] italic font-normal mt-6">
+          <div className="text-lg md:text-md lg:text-lg 2xl:text-2xl 2xl:leading-[32px] italic font-normal mt-6">
             <p data-aos-duration="1500" data-aos="fade-up" data-aos-delay="500">
               In an era where the global landscape is rapidly changing, we
               embrace innovation as a cornerstone of our operations. By staying
@@ -91,8 +91,15 @@ const ChairManMessage = () => {
             className="text-[#EB801B] md:text-lg lg:text-xl xl:text-[22px]  text-[26px] mt-8 flex"
           >
             <span> SHAHER AL SOBERIE</span>
-            <SignIcon />
           </h4>
+          <span
+            data-aos-duration="1500"
+            data-aos="fade-up"
+            data-aos-delay="850"
+            className="text-[#EB801B] md:text-lg lg:text-xl xl:text-[22px]  text-[26px] mt-8 flex"
+          >
+            <SignIcon />
+          </span>
         </div>
       </div>
     </section>

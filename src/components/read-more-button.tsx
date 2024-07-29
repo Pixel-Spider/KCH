@@ -8,7 +8,7 @@ const ReadMoreBtn = () => {
   const ref = useRef(null);
   useOnClickOutside(ref, () => setActive(false));
   return (
-    <div className="relative">
+    <div ref={ref} className="relative">
       <button
         data-aos-duration="1500"
         data-aos-delay="1300"
@@ -23,10 +23,7 @@ const ReadMoreBtn = () => {
         READ MORE
       </button>
       {active && (
-        <div
-          ref={ref}
-          className="prose w-[600px] xl2:w-[700px] 2xl:w-[1100px] dark:prose-invert absolute top-16 left-10 z-10"
-        >
+        <div className="prose w-[600px] xl2:w-[700px] 2xl:w-[1100px] dark:prose-invert absolute top-16 left-10 z-10">
           <div
             style={{
               clipPath:

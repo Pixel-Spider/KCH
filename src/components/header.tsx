@@ -51,7 +51,7 @@ const Header = () => {
               </span>
             </Link>
           </div>{" "}
-          <Link href={"/contact-us"}>
+          <Link href={"/contact-us/#quote"}>
             <div
               style={{
                 clipPath: "polygon(0 0, 100% 0%, 100% 100%, 16% 100%)",
