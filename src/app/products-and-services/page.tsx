@@ -94,6 +94,7 @@ const ProductAndServices = () => {
         subTitle="Transforming Industries with Our Chemical Expertise"
         initialImage={3}
       />
+      <div id="products" className="scroll-mt-[130px] 2xl:scroll-mt-[150px]" />
       <section className="pb-[900px] flex bg-service-bg-img bg-service-bg-img-size-2 bg-no-repeat bg-about-us-position">
         <div className="xl:w-[380px] xl2:w-[440px] 2xl:w-[480px] shrink-0 text-center">
           <div

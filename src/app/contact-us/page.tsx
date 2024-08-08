@@ -86,10 +86,7 @@ const ContactUs = () => {
           <div className="absolute bottom-0 z-10 w-full h-full bg-contactUsBg bg-no-repeat bg-contain bg-contact-us-position" />
         </div>
       </section>
-      <section
-        id="quote"
-        className="flex lg:scroll-mt-[110px] scroll-mt-[250px] mb-[100px]"
-      >
+      <section id="quote" className="flex scroll-mt-[250px] mb-[100px]">
         <div className="basis-1/2">
           <h5 className="text-[#2E3186] text-center leading-normal max-w-[593px] mx-auto text-3xl font-extrabold 2xl:text-[49px]">
             GET A QUOTE FROM OUR GLOBAL SUPPLIERS

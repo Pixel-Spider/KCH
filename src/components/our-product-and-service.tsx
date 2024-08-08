@@ -95,7 +95,9 @@ const OurProductAndService = () => {
               data-aos="fade-up"
               className="grid grid-cols-1  gap-x-6.5 "
             >
-              <Link href={`/products-and-services?active=${index + 1}`}>
+              <Link
+                href={`/products-and-services?active=${index + 1}#products`}
+              >
                 <div className="relative cursor-pointer h-full w-full overflow-hidden">
                   <Image
                     src={item.img}
