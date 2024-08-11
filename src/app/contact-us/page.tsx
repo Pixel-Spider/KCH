@@ -78,10 +78,57 @@ const ContactUs = () => {
               <span className="text-white">UNLOCK</span> POSSIBILITIES
             </h4>
             <br />
-            <h5 className="text-white -indent-[15px] after:content-['”'] before:content-['”'] -translate-x-full absolute bottom-0 z-20 leading-relaxed pb-20 text-4xl 2xl:text-[49px] w-min">
-              Join the Chemistry Champions: Explore Exciting Career
-              Opportunities
-            </h5>
+            <div className="text-white  -translate-x-full absolute bottom-0 z-20 leading-relaxed pb-20 text-4xl 2xl:text-[49px] w-min">
+              <div
+                className=" -indent-[15px] before:content-['”']"
+                data-aos="fade-up"
+              >
+                Join the
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+              >
+                Chemistry
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1500"
+              >
+                Champions:
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-duration="1500"
+              >
+                Explore
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1500"
+              >
+                Exciting
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="250"
+                data-aos-duration="1500"
+              >
+                Career
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1500"
+                className="after:content-['”']"
+              >
+                Opportunities
+              </div>
+            </div>
           </div>
           <div className="absolute bottom-0 z-10 w-full h-full bg-contactUsBg bg-no-repeat bg-contain bg-contact-us-position" />
         </div>

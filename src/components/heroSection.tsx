@@ -124,7 +124,7 @@ export default function HeroSection({
                       data-aos="fade-up"
                       className="text-lg aos  xl:text-3xl xl:mt-5 2xl:text-[48px] font-medium"
                     >
-                      The Sky is Not the Limit…
+                      {subTitle}
                     </p>
                   )}
                 </div>
