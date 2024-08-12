@@ -97,6 +97,16 @@ const Profile = () => {
                     global scale ultimately leading our endeavors to build
                     stakeholder’s pride.
                   </p>
+                  <Image
+                    src="/go_green.png"
+                    alt="go green"
+                    width={300}
+                    height={300}
+                    className="mx-auto mt-4"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-duration="1500"
+                  />
                 </div>
               </div>
             </div>
