@@ -36,7 +36,7 @@ const ContactUs = () => {
               KUWAIT CHEMICAL HOUSE COMPANY
             </h3>
             <p className="font-extrabold leading-[40px] text-xl 2xl:text-[29px] ">
-              Tel: +965 23725423 ob: +965-94455112{" "}
+              Tel: +965 94455112 ob: +965-94455112{" "}
             </p>
             <p className="font-extrabold leading-[64px] text-[#D45107] text-4xl 2xl:text-[47px]">
               Hotline:{" "}
@@ -63,8 +63,25 @@ const ContactUs = () => {
         </p>
         <div className="flex justify-center gap-6 mb-[96px] 2xl:gap-[40px]">
           <XIcon />
-          <InstaIcon />
-          <FacebookIcon />
+
+          <Link
+            href={
+              "https://www.instagram.com/kuwaitchemicalhousecompany?igsh=MTh0dmttbDR3Z29mcw=="
+            }
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            <InstaIcon />
+          </Link>
+          <Link
+            href={
+              "https://www.facebook.com/share/cESovM3daNvzJPPG/?mibextid=qi2Omg"
+            }
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            <FacebookIcon />
+          </Link>
           <LinkedInIcon />
         </div>
         <div className="h-[966px] w-full relative flex">
