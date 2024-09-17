@@ -100,7 +100,6 @@ const CaseStudy = () => {
   };
   return (
     <>
-      =
       <Header />
       <HeroSection
         headTitle="Excellence Guaranteed:"
