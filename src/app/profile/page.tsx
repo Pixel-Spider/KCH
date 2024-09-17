@@ -85,6 +85,7 @@ const Profile = () => {
                       height={120}
                       data-aos="fade-up"
                       data-aos-duration="1500"
+                      unoptimized
                     />
                     <h6
                       data-aos="fade-up"
