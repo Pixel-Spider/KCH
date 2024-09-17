@@ -36,89 +36,89 @@ const ProductAndServicesDropDown = () => {
           <DropdownMenu.Content className="z-50" sideOffset={5}>
             <div
               ref={ref}
-              className={`fixed w-[540px] bg-primary-linear flex py-[37px] rounded-es-2xl rounded-se-2xl px-[24px] xl:gap-4 2xl:gap-[23px] flex-col z-50`}
+              className={`fixed w-[540px] mt-6 bg-primary-linear flex py-[37px] rounded-es-2xl rounded-se-2xl px-[24px] xl:gap-4 2xl:gap-[23px] flex-col z-50`}
             >
               <span className="bg-[#EC801B] w-[50px] relative top-[-20px] h-[4px]" />
 
               <Link
-                href={"/products-and-services?active=1"}
+                href={"/products-and-services?active=1#products"}
                 className={"text-white xl:text-lg 2xl:text-[22px] font-normal"}
                 onClick={handleClick}
               >
                 OIL FIELD CHEMICALS
               </Link>
               <Link
-                href={"/products-and-services?active=2"}
+                href={"/products-and-services?active=2#products"}
                 className="text-white xl:text-lg 2xl:text-[22px] font-normal"
                 onClick={handleClick}
               >
                 WATER TREATMENT CHEMICALS{" "}
               </Link>
               <Link
-                href={"/products-and-services?active=3"}
+                href={"/products-and-services?active=3#products"}
                 className="text-white xl:text-lg 2xl:text-[22px] font-normal"
                 onClick={handleClick}
               >
                 CONSTRUCTION CHEMICALS{" "}
               </Link>
               <Link
-                href={"/products-and-services?active=4"}
+                href={"/products-and-services?active=4#products"}
                 className="text-white xl:text-lg 2xl:text-[22px] font-normal"
                 onClick={handleClick}
               >
                 AVIATION CHEMICALS{" "}
               </Link>
               <Link
-                href={"/products-and-services?active=5"}
+                href={"/products-and-services?active=5#products"}
                 className="text-white xl:text-lg 2xl:text-[22px] font-normal"
                 onClick={handleClick}
               >
                 PAINT & COATING CHEMICALS{" "}
               </Link>
               <Link
-                href={"/products-and-services?active=6"}
+                href={"/products-and-services?active=6#products"}
                 className="text-white xl:text-lg 2xl:text-[22px] font-normal"
                 onClick={handleClick}
               >
                 FOOD & BEVERAGE CHEMICALS
               </Link>
               <Link
-                href={"/products-and-services?active=7"}
+                href={"/products-and-services?active=7#products"}
                 className={"text-white xl:text-lg 2xl:text-[22px] font-normal"}
                 onClick={handleClick}
               >
                 SOIL REMEDIATION CHEMICALS{" "}
               </Link>
               <Link
-                href={"/products-and-services?active=8"}
+                href={"/products-and-services?active=8#products"}
                 className={"text-white xl:text-lg 2xl:text-[22px] font-normal"}
                 onClick={handleClick}
               >
                 INDUSTRIAL CLEANING & MARINE CHEMICALS{" "}
               </Link>
               <Link
-                href={"/products-and-services?active=9"}
+                href={"/products-and-services?active=9#products"}
                 className={"text-white xl:text-lg 2xl:text-[22px] font-normal"}
                 onClick={handleClick}
               >
                 ASPHALT CHEMICALS{" "}
               </Link>
               <Link
-                href={"/products-and-services?active=10"}
+                href={"/products-and-services?active=10#products"}
                 className={"text-white xl:text-lg 2xl:text-[22px] font-normal"}
                 onClick={handleClick}
               >
                 ENVIRONMENTAL & GREEN CHEMICALS
               </Link>
               <Link
-                href={"/products-and-services?active=11"}
+                href={"/products-and-services?active=11#products"}
                 className={"text-white xl:text-lg 2xl:text-[22px] font-normal"}
                 onClick={handleClick}
               >
                 LABORATORY CHEMICALS{" "}
               </Link>
               <Link
-                href={"/products-and-services?active=12"}
+                href={"/products-and-services?active=12#products"}
                 className={"text-white xl:text-lg 2xl:text-[22px] font-normal"}
                 onClick={handleClick}
               >

@@ -112,7 +112,9 @@ const OurProductAndService = () => {
                 <div className="bg-[#868D9A] relative flex-shrink-0 w-11 h-11 2xl:w-[55px] 2xl:h-[55px] lg:w-12 lg:h-12 p-1">
                   <Image src="/logo2.svg" fill alt="logo" />
                 </div>
-                <Link href={`/products-and-services?active=${index + 1}`}>
+                <Link
+                  href={`/products-and-services?active=${index + 1}#products`}
+                >
                   <p className="text-primary cursor-pointer text-xl 2xl:text-2xl font-extrabold">
                     {item.title}
                   </p>
