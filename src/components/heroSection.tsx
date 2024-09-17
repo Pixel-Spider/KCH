@@ -24,7 +24,7 @@ function NextArrow(props: any) {
     <button
       className={[
         "right-0 top-1/2 translate-y-[-50%] 2xl:w-[100px] 2xl:h-[100px] xl:w-[70px] xl:h-[70px]",
-        "border absolute z-10 border-white rounded-full inline-flex items-center justify-center",
+        "border absolute z-20 border-white rounded-full inline-flex items-center justify-center",
       ].join(" ")}
       onClick={() => onClick.current && onClick.current()}
       style={{
@@ -67,6 +67,13 @@ export default function HeroSection({
   subTitle = "",
   headTitle = "",
   initialImage = 1,
+  images = [],
+}: {
+  title?: string;
+  subTitle?: string;
+  headTitle?: string;
+  initialImage?: number;
+  images?: string[];
 }) {
   const nextSlideHandler = React.useRef<any>();
   const previousSlideHandler = React.useRef<any>();
@@ -122,6 +129,7 @@ export default function HeroSection({
                       data-aos-duration="1000"
                       data-aos-delay="1000"
                       data-aos="fade-up"
+                      data-aos-offset="50"
                       className="text-lg aos  xl:text-3xl xl:mt-5 2xl:text-[48px] font-medium"
                     >
                       {subTitle}
@@ -134,43 +142,17 @@ export default function HeroSection({
             </div>
           </div>
         </Overlay>
-        <Slide
-          background={{
-            backgroundImageSrc: "/hero-image-lg.jpg",
-            backgroundAnimation: "zoom",
-            backgroundAnimationDuration: "10000",
-          }}
-        />
-        <Slide
-          background={{
-            backgroundImageSrc: "/profile_hero-bg1.jpg",
-            backgroundAnimation: "zoom",
-            backgroundAnimationDuration: "10000",
-          }}
-        />
-
-        <Slide
-          background={{
-            backgroundImageSrc: "/hero-3.jpg",
-            backgroundAnimation: "zoom",
-            backgroundAnimationDuration: "10000",
-          }}
-        />
-
-        <Slide
-          background={{
-            backgroundImageSrc: "/hero-bg-4.jpg",
-            backgroundAnimation: "zoom",
-            backgroundAnimationDuration: "10000",
-          }}
-        />
-        <Slide
-          background={{
-            backgroundImageSrc: "/hero-bg-5.jpg",
-            backgroundAnimation: "zoom",
-            backgroundAnimationDuration: "10000",
-          }}
-        />
+        {images &&
+          images.map((image, index) => (
+            <Slide
+              background={{
+                backgroundImageSrc: `/${image}`,
+                backgroundAnimation: "zoom",
+                backgroundAnimationDuration: "10000",
+              }}
+              key={index}
+            />
+          ))}
       </HeroSlider>
       {/* <PrevArrow />
       <NextArrow />

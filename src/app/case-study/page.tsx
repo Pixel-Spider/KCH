@@ -100,11 +100,19 @@ const CaseStudy = () => {
   };
   return (
     <>
+      =
       <Header />
       <HeroSection
         headTitle="Excellence Guaranteed:"
         subTitle="Uncompromising Quality in Every Molecule"
         initialImage={4}
+        images={[
+          "hero-image-lg.jpg",
+          "profile_hero-bg1.jpg",
+          "hero-3.jpg",
+          "hero-bg-4.jpg",
+          "hero-bg-5.jpg",
+        ]}
       />
       <section className="pt-[54px] pb-[134px]  bg-neutral">
         <div className="mx-auto w-[63.28px] h-[3px] bg-secondary" />

@@ -15,13 +15,25 @@ export default function Home() {
           headTitle="Beyond Boundaries. Beyond Limits."
           subTitle="The Sky is Not the Limit…"
           initialImage={1}
+          images={[
+            "hero-image-lg.jpg",
+            "hero-1.jpeg",
+            "hero-2.jpeg",
+            "hero-3.jpeg",
+          ]}
         />
         <AboutUs />
         <OurProductAndService />
+        <span className="absolute top-[76%] opacity-50 right-0 z-[2]">
+          <Image
+            src={"/about-us-bg3.png"}
+            alt="Logo"
+            width={352}
+            height={587}
+          />
+        </span>
       </main>
-      <span className="absolute top-[76%] opacity-50 right-0 z-10">
-        <Image src={"/about-us-bg3.png"} alt="Logo" width={352} height={587} />
-      </span>
+
       <Footer />
     </>
   );

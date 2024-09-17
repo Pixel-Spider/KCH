@@ -93,6 +93,13 @@ const ProductAndServices = () => {
         headTitle="Tailoring Solutions:"
         subTitle="Transforming Industries with Our Chemical Expertise"
         initialImage={3}
+        images={[
+          "hero-image-lg.jpg",
+          "profile_hero-bg1.jpg",
+          "hero-3.jpg",
+          "hero-bg-4.jpg",
+          "hero-bg-5.jpg",
+        ]}
       />
       <div id="products" className="scroll-mt-[130px] 2xl:scroll-mt-[150px]" />
       <section className="pb-[900px] flex bg-service-bg-img bg-service-bg-img-size-2 bg-no-repeat bg-about-us-position">
