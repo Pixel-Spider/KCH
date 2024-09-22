@@ -30,7 +30,7 @@ const Profile = () => {
         />
         <div className="px-6.5 md:px-20 xl:px-[150px] 2xl:px-[185px]">
           <ChairManMessage />
-          <OurTeam />
+          {/* <OurTeam /> */}
           <section className="mt-[54px] mb-[35px] 2xl:my-[65px]">
             <div className="grid grid-cols-1 gap-5 md:gap-0 md:grid-cols-3">
               <div className="align-start">
